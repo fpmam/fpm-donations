@@ -1,0 +1,150 @@
+/* Video */
+.video
+{
+  display: block;
+  position: relative;
+  width: 100%;
+  text-align: left;
+  vertical-align: top;
+  background-color: #000;
+  max-width: 100%;
+  overflow: hidden;
+  padding-top: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+
+  @media (min-width: 992px) {
+    padding-bottom: 53.6%;
+    width: 95.1%;
+  }
+
+  .video-youtube
+  {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-file
+  {
+    display: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+  }
+
+  .video-placeholder
+  {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .video-text
+  {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 100%;
+    height: auto;
+    background-color: rgba(33,33,33,.75);
+    padding: .5rem;
+    cursor: pointer;
+    cursor: hand;
+    z-index: 9;
+
+    @media (max-width: 767px)
+    {
+      display: none;
+    }
+
+    h3
+    {
+      color: $white;
+      font-weight: 600;
+      padding: 0;
+      margin: 0 0 .25rem;
+    }
+
+    p
+    {
+      color: $white;
+      padding: 0;
+      margin: 0;
+    }
+  }
+  .video-overlay {
+    background-color: rgba(33,33,33,.3);
+    content: '';
+    cursor: pointer;
+    display: block;
+    position: absolute;
+    top: 0;
+    transition: all .2s ease-in-out;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+  }
+  .video-icon {
+    background: url(assets/icons/video-play.svg) no-repeat 100%;
+    cursor: pointer;
+    height: 100px;
+    left: 50%;
+    margin: -50px 0 0 -50px;
+    opacity: .6;
+    position: absolute;
+    top: 50%;
+    transition: all .2s ease-in-out;
+    width: 100px;
+    z-index: 10;
+  }
+  &:hover {
+    .video-overlay {
+      opacity: .2;
+    }
+    .video-icon {
+      opacity: .9;
+      transform: scale(1.05);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .video {
+    .video-text {
+      padding: 1rem;
+    }
+    .video-icon {
+      height: 130px;
+      margin: -65px 0 0 -65px;
+      width: 130px;
+    }
+  }
+}
+@media (min-width: 992px) {
+  .video {
+    .video-icon {
+      height: 140px;
+      margin: -70px 0 0 -70px;
+      width: 140px;
+    }
+  }
+}
+@media (min-width: 1200px) {
+  .video {
+    .video-icon {
+      height: 180px;
+      margin: -90px 0 0 -90px;
+      width: 180px;
+    }
+  }
+}

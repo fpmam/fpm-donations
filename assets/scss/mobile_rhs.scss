@@ -1,0 +1,18 @@
+.mobile-rhs
+{
+  display: none;
+  padding-top: 2rem;
+
+  @media (max-width: 991px)
+  {
+    display: block;
+  }
+
+  .mobile-rhs-inner
+  {
+    .mobile-rhs-container
+    {
+
+    }
+  }
+}

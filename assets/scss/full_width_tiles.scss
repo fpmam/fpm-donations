@@ -1,0 +1,112 @@
+.full-width-tiles {
+  background-color: $grey-section-background;
+  margin-bottom: 3rem;
+  @media (min-width: 768px) {
+    margin-bottom: 5rem;
+  }
+
+  .full-width-tiles-inner {
+
+    .container
+    {
+      padding-top: 3rem;
+
+      .tile-container-wrapper {
+        display: flex;
+
+        .tile-container
+        {
+          background: $white-text;
+          border: 1px solid $light-grey3;
+          border-radius: 5px;
+          padding: 5% 5% 5rem;
+          margin-bottom: 3rem;
+          position: relative;
+
+          @media (min-width: 768px) {
+            padding: 5% 5% 2rem;
+            width: 100%;
+          }
+
+
+          .tile-image
+          {
+            background-color: $light-grey3;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 35vw;
+
+
+            @media (min-width: 576px) {
+              height: 17vw;
+            }
+          }
+
+          .tile-title
+          {
+            border-bottom: 1px solid $light-grey3;
+            padding: 1rem 0;
+            margin: 0 0 1rem;
+            width: 100%;
+          }
+
+          .tile-links {
+            position: absolute;
+            bottom: 1rem;
+            left: 5%;
+            width: 90%;
+
+            a {
+              color: $pink;
+              display: block;
+              font-family: 'Paytone One', Helvetica, Arial, sans-serif;
+              text-decoration: none;
+              white-space: nowrap;
+              
+              body.about-us & {
+                color: $pink;        
+              }
+
+              body.services & {
+                color: $green;        
+              }
+
+              body.news & {
+                color: $blue;        
+              }
+
+              body.get-involved & {
+                color: $orange;        
+              }
+
+              &:hover,
+              &:focus,
+              &:active {
+                color: $dark-grey!important;
+              }
+            }
+
+            .link-right {
+              a {
+                color: $light-grey4!important;
+                margin-top: 1rem;
+
+                @media (min-width: 768px) {
+                  margin-top: 0;
+                  text-align: right;
+                }
+                
+                &:hover,
+                &:focus,
+                &:active {
+                  color: $dark-grey!important;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

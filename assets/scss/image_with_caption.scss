@@ -1,0 +1,20 @@
+/* Image with Caption */
+.image-with-caption
+{
+  background-color: $light-grey;
+  margin-bottom: 3rem;
+
+  .image-with-caption-panel-inner
+  {
+    .image-with-caption-panel-container
+    {
+    }
+  }
+}
+
+.our-news {
+	.image-with-caption
+	{
+	  background-color: $white;
+	}
+}

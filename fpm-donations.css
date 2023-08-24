@@ -1,0 +1,741 @@
+/*
+Theme Name: FPM Donate
+Description: Donation page styling - v1
+Version: 1.0
+*/
+
+/* donations */
+.donations {
+  /* ... */
+}
+
+.donations .col-12 {
+  padding-bottom: 0;
+  padding-right: 15px;
+}
+
+.donations .payment-triggers {
+  display: flex;
+}
+
+.donations .payment-triggers .payment-trigger {
+  background-color: var(--light-grey7);
+  border-radius: 0;
+  color: var(--mid-grey2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  flex: 1;
+  outline: none;
+  padding: 1rem 1rem .8rem;
+  text-transform: uppercase;
+}
+
+.donations .payment-triggers .payment-trigger:hover,
+.donations .payment-triggers .payment-trigger:focus,
+.donations .payment-triggers .payment-trigger:active {
+  background-color: var(--light-grey2);
+  box-shadow: none;
+}
+
+.donations .payment-triggers .payment-trigger.active {
+  background-color: var(--mid-grey1);
+  color: var(--white-text);
+  outline: none;
+}
+
+.donations .payment-panel {
+  background-color: var(--light-grey7);
+  padding: 1rem 1.5rem 1.5rem;
+}
+
+.donations .payment-panel .frequency {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .donations .payment-panel .frequency {
+    font-size: 1.8rem;
+  }
+}
+
+.donations .payment-panel .frequency span {
+  display: none;
+}
+
+.donations .payment-panel .frequency span.active {
+  display: inline;
+}
+
+.donations .payment-panel .image-wrapper {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 370px;
+  height: 294px;
+  margin: 0 auto;
+}
+
+.donations .payment-panel .button-wrapper {
+  display: flex;
+  overflow: visible;
+  z-index: 1;
+}
+
+.donations .payment-panel .button-wrapper .btn-amt {
+  background-color: var(--mid-grey1);
+  border-radius: 0;
+  color: var(--light-grey7);
+  flex: 1;
+  font-size: 1.8rem;
+  font-weight: 600;
+  min-width: auto;
+  overflow: visible;
+  padding: .6rem;
+  position: relative;
+}
+
+.donations .payment-panel .button-wrapper .btn-amt:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid var(--mid-grey1);
+  transition: all 0.3s;
+}
+
+.donations .payment-panel .button-wrapper .btn-amt.active:after,
+.donations .payment-panel .button-wrapper .btn-amt.initial-select:after,
+.donations .payment-panel .button-wrapper .btn-amt:hover:after {
+  bottom: -10px;
+  border-top-color: var(--orange);
+}
+
+.donations .payment-panel .could-pay p {
+  display: none;
+}
+
+.donations .payment-panel .could-pay p.active,
+.donations .payment-panel .could-pay p.initial-select {
+  display: block;
+}
+
+.donations .payment-panel #paymentForm .form-group {
+  margin: 0;
+}
+
+.donations .payment-panel #paymentForm .form-group .input-wrapper {
+  display: block;
+  height: 60px;
+  margin-bottom: 2rem;
+  position: relative;
+  width: 100%;
+}
+
+.donations .payment-panel #paymentForm .form-group .input-wrapper .currency-symbol {
+  left: 15px;
+  font-size: 1.8rem;
+  font-weight: 700;
+  height: 45px;
+  line-height: 45px;
+  position: absolute;
+  top: 8px;
+  width: 30px;
+  z-index: 2;
+}
+
+.donations .payment-panel #paymentForm .form-group .input-wrapper #amount {
+  border: 3px solid var(--white-text);
+  border-radius: 0;
+  font-size: 1.8rem;
+  font-weight: 600;
+  height: 60px;
+  left: 0;
+  top: 0;
+  padding: 3px 10px 3px 40px;
+  position: absolute;
+}
+
+.donations .payment-panel #paymentForm .form-group .input-wrapper #amount::placeholder {
+  color: var(--mid-grey4);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+
+.donations .payment-panel #paymentForm .form-group .input-wrapper #amount:focus {
+  border-color: var(--orange);
+}
+
+/* Forms */
+.gform_wrapper {
+  margin-bottom: 0 !important; }
+  .gform_wrapper form.contact-us li.select-category li {
+    padding-right: 0 !important;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .gform_wrapper form.contact-us li.select-category li {
+        display: inline-block;
+        float: left;
+        margin-right: 2%;
+        width: 49%;
+        clear: none; }
+        .gform_wrapper form.contact-us li.select-category li:nth-child(2n+2) {
+          margin-right: 0; } }
+    @media (min-width: 1200px) {
+      .gform_wrapper form.contact-us li.select-category li {
+        width: 40%; } }
+    @media (min-width: 1400px) {
+      .gform_wrapper form.contact-us li.select-category li {
+        width: 35%; } }
+  .gform_wrapper form.contact-us li.first-name, .gform_wrapper form.contact-us li.surname, .gform_wrapper form.contact-us li.email, .gform_wrapper form.contact-us li.email-confirm {
+    padding-right: 0 !important;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .gform_wrapper form.contact-us li.first-name, .gform_wrapper form.contact-us li.surname, .gform_wrapper form.contact-us li.email, .gform_wrapper form.contact-us li.email-confirm {
+        display: inline-block;
+        float: left;
+        margin-right: 2%;
+        width: 49%;
+        clear: none; } }
+    @media (min-width: 1200px) {
+      .gform_wrapper form.contact-us li.first-name, .gform_wrapper form.contact-us li.surname, .gform_wrapper form.contact-us li.email, .gform_wrapper form.contact-us li.email-confirm {
+        width: 40%; } }
+    @media (min-width: 1400px) {
+      .gform_wrapper form.contact-us li.first-name, .gform_wrapper form.contact-us li.surname, .gform_wrapper form.contact-us li.email, .gform_wrapper form.contact-us li.email-confirm {
+        width: 35%; } }
+    .gform_wrapper form.contact-us li.first-name input, .gform_wrapper form.contact-us li.surname input, .gform_wrapper form.contact-us li.email input, .gform_wrapper form.contact-us li.email-confirm input {
+      width: 100%; }
+  @media (min-width: 768px) {
+    .gform_wrapper form.contact-us li.surname, .gform_wrapper form.contact-us li.email-confirm {
+      margin-right: 0; } }
+  .gform_wrapper form.contact-us li.your-message {
+    padding: 20px 0 0 0 !important;
+    clear: both;
+    float: none; }
+  .gform_wrapper form .gform_heading {
+    margin-bottom: 1rem; }
+    .gform_wrapper form .gform_heading .gform_description {
+      display: none; }
+  .gform_wrapper form .gform_body .gform_fields li.gfield input[type=radio] {
+    margin: 3px 3px 0 0; }
+  .gform_wrapper form .gform_body .gform_fields li.gfield input[type=text],
+  .gform_wrapper form .gform_body .gform_fields li.gfield input[type=email],
+  .gform_wrapper form .gform_body .gform_fields li.gfield input[type=tel],
+  .gform_wrapper form .gform_body .gform_fields li.gfield textarea {
+    border: 1px solid #c6c6c6;
+    resize: vertical; }
+  .gform_wrapper form .gform_body .gform_fields li.gfield div.ginput_complex label {
+    color: #6d6d6b; }
+  .gform_wrapper form .gform_body .gform_fields li.gfield div.gfield_consent_description {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: .5rem; }
+  .gform_wrapper form .gform_body .gform_fields li.gfield div.ginput_container_consent {
+    margin-bottom: 3rem !important; }
+    .gform_wrapper form .gform_body .gform_fields li.gfield div.ginput_container_consent label {
+      width: 85%; }
+    .gform_wrapper form .gform_body .gform_fields li.gfield div.ginput_container_consent input[type=checkbox] {
+      margin-top: 5px;
+      vertical-align: top; }
+  .gform_wrapper form .gform_body .gform_fields li.gfield:not(:first-child) h2.gsection_title {
+    margin-top: 3rem !important; }
+  .gform_wrapper form .gform_body .gform_fields .gfield_checkbox li label,
+  .gform_wrapper form .gform_body .gform_fields .gfield_radio li label {
+    font-size: 1rem;
+    font-weight: 400; }
+  .gform_wrapper form .gform_body .gform_fields select {
+    border: 1px solid #c6c6c6;
+    margin-bottom: 0;
+    padding: 9px 5px; }
+  .gform_wrapper form .gform_body .gform_page_footer {
+    border-top: none; }
+    .gform_wrapper form .gform_body .gform_page_footer input[type=button], .gform_wrapper form .gform_body .gform_page_footer input[type=submit] {
+      background-color: #6ca638;
+      border-radius: 3px;
+      color: #fff;
+      display: inline-block;
+      font-size: 1rem;
+      font-weight: 400;
+      text-decoration: none;
+      padding: 0.5rem 2rem;
+      border: none;
+      margin: 0 1rem 1rem 0;
+      min-width: 100px;
+      outline: none;
+      transition: 0.3s all ease;
+      transform: translateZ(0); }
+      .gform_wrapper form .gform_body .gform_page_footer input[type=button]:hover, .gform_wrapper form .gform_body .gform_page_footer input[type=button]:focus,
+      .gform_wrapper form .gform_body .gform_page_footer input[type=button] :active,
+      .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:hover,
+      .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:focus,
+      .gform_wrapper form .gform_body .gform_page_footer input[type=submit] :active {
+        background-color: #7aaf4a; }
+      body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=button],
+      body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=submit] {
+        background-color: #b23562; }
+        body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=button]:hover, body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=button]:focus,
+        body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=button] :active,
+        body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:hover,
+        body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:focus,
+        body.about-us .gform_wrapper form .gform_body .gform_page_footer input[type=submit] :active {
+          background-color: #c04f77; }
+      body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=button], body.event .gform_wrapper form .gform_body .gform_page_footer input[type=button], body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=submit], body.event .gform_wrapper form .gform_body .gform_page_footer input[type=submit] {
+        background-color: #d36601; }
+        body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=button]:hover, body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=button]:focus,
+        body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=button] :active, body.event .gform_wrapper form .gform_body .gform_page_footer input[type=button]:hover, body.event .gform_wrapper form .gform_body .gform_page_footer input[type=button]:focus,
+        body.event .gform_wrapper form .gform_body .gform_page_footer input[type=button] :active, body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:hover, body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:focus,
+        body.get-involved .gform_wrapper form .gform_body .gform_page_footer input[type=submit] :active, body.event .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:hover, body.event .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:focus,
+        body.event .gform_wrapper form .gform_body .gform_page_footer input[type=submit] :active {
+          background-color: #e7862c; }
+      body.news .gform_wrapper form .gform_body .gform_page_footer input[type=button], body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=button], body.news .gform_wrapper form .gform_body .gform_page_footer input[type=submit], body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=submit] {
+        background-color: #027d9a; }
+        body.news .gform_wrapper form .gform_body .gform_page_footer input[type=button]:hover, body.news .gform_wrapper form .gform_body .gform_page_footer input[type=button]:focus,
+        body.news .gform_wrapper form .gform_body .gform_page_footer input[type=button] :active, body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=button]:hover, body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=button]:focus,
+        body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=button] :active, body.news .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:hover, body.news .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:focus,
+        body.news .gform_wrapper form .gform_body .gform_page_footer input[type=submit] :active, body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:hover, body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=submit]:focus,
+        body.blog .gform_wrapper form .gform_body .gform_page_footer input[type=submit] :active {
+          background-color: #178ea9; }
+      .gform_wrapper form .gform_body .gform_page_footer input[type=button].gform_previous_button, .gform_wrapper form .gform_body .gform_page_footer input[type=submit].gform_previous_button {
+        background-color: #ccc !important;
+        color: #3c3b3b !important; }
+        .gform_wrapper form .gform_body .gform_page_footer input[type=button].gform_previous_button:hover, .gform_wrapper form .gform_body .gform_page_footer input[type=button].gform_previous_button:focus, .gform_wrapper form .gform_body .gform_page_footer input[type=button].gform_previous_button:active, .gform_wrapper form .gform_body .gform_page_footer input[type=submit].gform_previous_button:hover, .gform_wrapper form .gform_body .gform_page_footer input[type=submit].gform_previous_button:focus, .gform_wrapper form .gform_body .gform_page_footer input[type=submit].gform_previous_button:active {
+          background-color: #e4e4e3 !important; }
+  .gform_wrapper form .gform_footer {
+    margin: 0; }
+  .gform_wrapper form li.gfield.gfield_error {
+    background-color: #fafdf7;
+    border-top: 2px solid #6ca638;
+    border-bottom: 2px solid #6ca638;
+    padding: 1rem 0; }
+    .gform_wrapper form li.gfield.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+      border: 1px solid #6ca638; }
+    body.about-us .gform_wrapper form li.gfield.gfield_error {
+      background-color: #fff5f9;
+      border-top: 2px solid #b23562;
+      border-bottom: 2px solid #b23562; }
+      body.about-us .gform_wrapper form li.gfield.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+        border: 1px solid #b23562; }
+    body.get-involved .gform_wrapper form li.gfield.gfield_error, body.event .gform_wrapper form li.gfield.gfield_error {
+      background-color: #fffaf5;
+      border-top: 2px solid #d36601;
+      border-bottom: 2px solid #d36601; }
+      body.get-involved .gform_wrapper form li.gfield.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), body.event .gform_wrapper form li.gfield.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+        border: 1px solid #d36601; }
+    body.news .gform_wrapper form li.gfield.gfield_error, body.blog .gform_wrapper form li.gfield.gfield_error {
+      background-color: #f6fdff;
+      border-top: 2px solid #027d9a;
+      border-bottom: 2px solid #027d9a; }
+      body.news .gform_wrapper form li.gfield.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]), body.blog .gform_wrapper form li.gfield.gfield_error input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+        border: 1px solid #027d9a; }
+  .gform_wrapper form li.gfield.hidden_label input {
+    margin-top: 0 !important; }
+  .gform_wrapper form div.validation_error {
+    color: #6ca638;
+    border-top: 2px solid #6ca638;
+    border-bottom: 2px solid #6ca638;
+    margin-top: 2rem;
+    width: 98% !important; }
+    body.get-involved .gform_wrapper form div.validation_error, body.event .gform_wrapper form div.validation_error {
+      color: #d36601;
+      border-top: 2px solid #d36601;
+      border-bottom: 2px solid #d36601; }
+    body.about-us .gform_wrapper form div.validation_error {
+      color: #b23562;
+      border-top: 2px solid #b23562;
+      border-bottom: 2px solid #b23562; }
+    body.news .gform_wrapper form div.validation_error, body.blog .gform_wrapper form div.validation_error {
+      color: #027d9a;
+      border-top: 2px solid #027d9a;
+      border-bottom: 2px solid #027d9a; }
+  .gform_wrapper form .validation_message {
+    color: #6ca638; }
+    body.about-us .gform_wrapper form .validation_message {
+      color: #b23562; }
+    body.get-involved .gform_wrapper form .validation_message, body.event .gform_wrapper form .validation_message {
+      color: #d36601; }
+    body.news .gform_wrapper form .validation_message, body.blog .gform_wrapper form .validation_message {
+      color: #027d9a; }
+  .gform_wrapper form li.gfield_error .gfield_label, .gform_wrapper form li.gfield_error div.ginput_complex.ginput_container label, .gform_wrapper form li.gfield_error ul.gfield_checkbox, .gform_wrapper form li.gfield_error ul.gfield_radio {
+    color: #6ca638; }
+    body.about-us .gform_wrapper form li.gfield_error .gfield_label,
+    body.about-us .gform_wrapper form li.gfield_error div.ginput_complex.ginput_container label,
+    body.about-us .gform_wrapper form li.gfield_error ul.gfield_checkbox,
+    body.about-us .gform_wrapper form li.gfield_error ul.gfield_radio {
+      color: #b23562; }
+    body.get-involved .gform_wrapper form li.gfield_error .gfield_label, body.event .gform_wrapper form li.gfield_error .gfield_label, body.get-involved .gform_wrapper form li.gfield_error div.ginput_complex.ginput_container label, body.event .gform_wrapper form li.gfield_error div.ginput_complex.ginput_container label, body.get-involved .gform_wrapper form li.gfield_error ul.gfield_checkbox, body.event .gform_wrapper form li.gfield_error ul.gfield_checkbox, body.get-involved .gform_wrapper form li.gfield_error ul.gfield_radio, body.event .gform_wrapper form li.gfield_error ul.gfield_radio {
+      color: #d36601; }
+    body.news .gform_wrapper form li.gfield_error .gfield_label, body.blog .gform_wrapper form li.gfield_error .gfield_label, body.news .gform_wrapper form li.gfield_error div.ginput_complex.ginput_container label, body.blog .gform_wrapper form li.gfield_error div.ginput_complex.ginput_container label, body.news .gform_wrapper form li.gfield_error ul.gfield_checkbox, body.blog .gform_wrapper form li.gfield_error ul.gfield_checkbox, body.news .gform_wrapper form li.gfield_error ul.gfield_radio, body.blog .gform_wrapper form li.gfield_error ul.gfield_radio {
+      color: #027d9a; }
+  .gform_wrapper form .gfield_checkbox li input,
+  .gform_wrapper form .gfield_checkbox li input[type=checkbox] {
+    margin-top: 5px !important;
+    vertical-align: top !important; }
+  .gform_wrapper form input[type=checkbox] {
+    width: 20px;
+    height: 15px;
+    margin: -1px 0 0;
+    vertical-align: middle; }
+  .gform_wrapper .gf_progressbar_wrapper {
+    margin-bottom: 1rem; }
+    .gform_wrapper .gf_progressbar_wrapper h3.gf_progressbar_title {
+      color: #3c3b3b;
+      font-size: 1rem !important;
+      font-family: "Muli", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      left: -12px;
+      margin: 1rem 0 !important;
+      padding-top: 1rem;
+      position: relative; }
+    .gform_wrapper .gf_progressbar_wrapper .gf_progressbar {
+      background: none;
+      background-color: #dadada;
+      border-radius: 0; }
+      .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
+        background: none;
+        background-color: #6ca638;
+        border-radius: 0;
+        font-size: 0.9rem !important; }
+        .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage span {
+          color: #fff;
+          font-weight: 700;
+          text-shadow: none; }
+        body.about-us .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
+          background-color: #b23562; }
+        body.services .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
+          background-color: #6ca638; }
+        body.news .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage, body.blog .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
+          background-color: #027d9a; }
+        body.get-involved .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage,
+        .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage body.events {
+          background-color: #d36601; }
+      .gform_wrapper .gf_progressbar_wrapper .gf_progressbar:after {
+        display: none; }
+  .gform_wrapper .gform_confirmation_message {
+    margin-top: 1rem; }
+
+.enquiry-form {
+  display: none;
+  overflow: visible;
+  position: relative; }
+  .enquiry-form.open {
+    display: block; }
+  .enquiry-form #contact_form_pop {
+    border: 3px solid #e4e4e3;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    background: #f1f2f2;
+    z-index: 999;
+    padding: 2rem;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .enquiry-form #contact_form_pop {
+        width: 600px; } }
+  .enquiry-form span.close {
+    color: #000;
+    opacity: 0.9 !important;
+    position: absolute;
+    z-index: 999;
+    right: 4px;
+    top: 13px;
+    padding: 0 10px;
+    cursor: pointer; }
+    .enquiry-form span.close img {
+      height: 15px;
+      width: 15px; }
+    .enquiry-form span.close:hover {
+      opacity: 0.6 !important; }
+  .enquiry-form .field-group {
+    margin-bottom: 1rem; }
+    .enquiry-form .field-group input[type=checkbox] {
+      width: 20px;
+      height: 15px;
+      margin: -1px 0 0;
+      vertical-align: middle; }
+  .enquiry-form .field-group label.ftr-label {
+    font-size: .9rem; }
+  .enquiry-form .field-group label a {
+    font-size: inherit;
+    font-weight: inherit;
+    text-decoration: underline; }
+    .enquiry-form .field-group label a:hover {
+      color: #6ca638;
+      text-decoration: none; }
+  .enquiry-form .field-group.invalid,
+  .enquiry-form .field-group.invalid a {
+    color: #d90000; }
+  .enquiry-form .field-group.invalid input {
+    outline: 1px solid #d90000; }
+
+body img.gform_ajax_spinner,
+body #bbox-msg-wrapper img {
+  width: auto !important; }
+
+.timeline {
+  display: flex; }
+  body.page-id-2502 .timeline {
+    display: none; }
+    body.page-id-2502 .timeline.loaded {
+      display: flex; }
+
+#mongo-form .step.step-1, #mongo-form .step.step-2, #mongo-form .step.step-3 {
+  display: none; }
+  #mongo-form .step.step-1.current, #mongo-form .step.step-2.current, #mongo-form .step.step-3.current {
+    display: block; }
+#mongo-form #bboxdonation_payment_BBFormConfirmationBoxWrapper {
+  z-index: 10; }
+#mongo-form #bboxdonation_divThanks div p:first-child {
+  border-bottom: 1px solid #ccc;
+  font-weight: 600;
+  font-size: 1.2rem;
+  margin: 0 0 2rem;
+  padding: 0 0 .25rem; }
+#mongo-form #bboxdonation_divThanks div.BBFormConfirmationTransactionDetails {
+  display: none; }
+#mongo-form em {
+  font-style: normal !important; }
+#mongo-form img {
+  margin-bottom: 0; }
+#mongo-form input#bboxdonation_gift_txtOtherAmountButtons {
+  min-width: 100px; }
+#mongo-form .step-btn {
+  margin: 1rem 1rem 1rem 0;
+  min-width: 210px; }
+  #mongo-form .step-btn.prev {
+    background-color: #ccc;
+    color: #3c3b3b; }
+    #mongo-form .step-btn.prev:hover, #mongo-form .step-btn.prev:focus, #mongo-form .step-btn.prev:active {
+      background-color: #e4e4e3; }
+#mongo-form fieldset {
+  display: flex;
+  flex-direction: column; }
+#mongo-form .BBFormContainer {
+  border-radius: 0;
+  padding: 10px 0; }
+#mongo-form #bboxdonation_divForm {
+  overflow: visible; }
+  #mongo-form #bboxdonation_divForm .BBFormProgressContainer {
+    border-top: 1px solid #ccc;
+    margin: 3rem 0 2rem;
+    padding-top: 3rem; }
+    #mongo-form #bboxdonation_divForm .BBFormProgressContainer .BBFormProgressBar-Summary {
+      background-color: #dadada;
+      border-radius: 0;
+      box-shadow: none;
+      height: 24px; }
+      #mongo-form #bboxdonation_divForm .BBFormProgressContainer .BBFormProgressBar-Summary .BBFormProgress-Bar {
+        background-color: #6ca638; }
+#mongo-form .BBFormSection {
+  max-width: 100%;
+  margin: 0; }
+#mongo-form .BBFormFieldContainer {
+  margin: 0 0 1rem;
+  padding: 0; }
+  #mongo-form .BBFormFieldContainer #bboxdonation_gift_lblUKGiftAidTerms {
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1rem; }
+  #mongo-form .BBFormFieldContainer#bboxdonation_comment_fldComments label {
+    display: block;
+    margin-bottom: .25rem;
+    max-width: 100%; }
+  #mongo-form .BBFormFieldContainer#reCAPTCHADisclosure {
+    margin-left: 0; }
+  #mongo-form .BBFormFieldContainer #bbox_reCAPTCHA .grecaptcha-badge {
+    z-index: 1; }
+#mongo-form .BBFormSectionHeading {
+  margin: 0 0 2rem;
+  padding: 0 0 .25rem; }
+  #mongo-form .BBFormSectionHeading#bboxdonation_recurrence_divHeadingRecurrence {
+    margin: 1rem 0; }
+  #mongo-form .BBFormSectionHeading label {
+    font-size: 1.2rem; }
+#mongo-form .BBFormRadioLabelGivingLevel {
+  background-color: #f1f2f2;
+  border-radius: 3px;
+  border: none;
+  color: #33383C;
+  font-size: 1.5rem; }
+  #mongo-form .BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelSelected {
+    background-color: #d36601;
+    color: #fff;
+    /*&:hover,
+    &:focus,
+    &:active {
+      background-color: $orangeHover;
+    } */ }
+    @media (max-width: 599px) {
+      #mongo-form .BBFormRadioLabelGivingLevel.BBFormRadioLabelGivingLevelSelected.BBFormRadioLabelGivingLevelOther {
+        padding: 12px 10px; } }
+#mongo-form .BBFormSubmitbutton {
+  background-color: #d36601;
+  border-radius: 3px;
+  box-shadow: none;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 1rem 0;
+  min-width: 210px;
+  padding: 0.5rem 2rem;
+  text-transform: uppercase; }
+  @media (min-width: 768px) {
+    #mongo-form .BBFormSubmitbutton {
+      margin: 0 0 1rem; } }
+  #mongo-form .BBFormSubmitbutton:hover, #mongo-form .BBFormSubmitbutton:focus, #mongo-form .BBFormSubmitbutton:active {
+    background-color: #e7862c;
+    opacity: 1; }
+#mongo-form .BBFormRadioGiftNotSelected,
+#mongo-form .BBFormRadioPaymentNotSelected {
+  background-color: #f1f2f2;
+  border-radius: 3px;
+  border: none;
+  color: #33383C;
+  font-weight: 400;
+  padding: 0.5rem 2rem;
+  width: 240px; }
+#mongo-form .BBFormGiftOtherAmount {
+  border: none !important;
+  margin: -4px 0 -10px 0; }
+#mongo-form .BBFormRadioGiftSelected {
+  background-color: #d36601;
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-weight: 400;
+  padding: 0.5rem 2rem;
+  width: 240px; }
+  #mongo-form .BBFormRadioGiftSelected:hover, #mongo-form .BBFormRadioGiftSelected:focus, #mongo-form .BBFormRadioGiftSelected:active {
+    background-color: #e7862c; }
+#mongo-form .BBFormRadioPaymentSelected {
+  background-color: #ccc;
+  border-radius: 3px;
+  border: none;
+  color: #3c3b3b;
+  font-weight: 400;
+  padding: 0.5rem 2rem;
+  width: 240px; }
+  #mongo-form .BBFormRadioPaymentSelected:hover, #mongo-form .BBFormRadioPaymentSelected:focus, #mongo-form .BBFormRadioPaymentSelected:active {
+    background-color: #e4e4e3; }
+#mongo-form .BBFormSelectList {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url(assets/images/select-arrow.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  background-size: 20px;
+  border: 1px solid #c6c6c6;
+  border-radius: 0;
+  line-height: 1.5rem !important;
+  min-height: 2.5rem;
+  padding: .5rem 1rem .5rem .5rem; }
+  @media (min-width: 600px) {
+    #mongo-form .BBFormSelectList {
+      background-size: 18px; } }
+  #mongo-form .BBFormSelectList#bboxdonation_billing_billingAddress_ddUKCounty {
+    margin-top: 10px;
+    max-width: 100%;
+    width: 100%; }
+    @media (min-width: 768px) {
+      #mongo-form .BBFormSelectList#bboxdonation_billing_billingAddress_ddUKCounty {
+        margin-left: 160px; } }
+    @media (min-width: 600px) {
+      #mongo-form .BBFormSelectList#bboxdonation_billing_billingAddress_ddUKCounty {
+        max-width: 350px; } }
+#mongo-form .BBFormTextbox {
+  border: 1px solid #c6c6c6;
+  border-radius: 0;
+  line-height: inherit !important;
+  min-height: 2.5rem;
+  padding: .5rem; }
+  #mongo-form .BBFormTextbox.BBFormGiftOtherAmount {
+    background: none !important;
+    box-shadow: none !important;
+    color: #fff !important;
+    font-size: 1.5rem;
+    padding: 0; }
+    #mongo-form .BBFormTextbox.BBFormGiftOtherAmount::placeholder {
+      color: #fff !important; }
+  #mongo-form .BBFormTextbox#bboxdonation_billing_txtFirstName {
+    max-width: 252px; }
+    @media (max-width: 767.98px) {
+      #mongo-form .BBFormTextbox#bboxdonation_billing_txtFirstName {
+        max-width: 300px; } }
+    @media (max-width: 599.98px) {
+      #mongo-form .BBFormTextbox#bboxdonation_billing_txtFirstName {
+        max-width: 100%; } }
+    @media (min-width: 600px) {
+      #mongo-form .BBFormTextbox#bboxdonation_billing_txtFirstName {
+        width: 52%; } }
+  #mongo-form .BBFormTextbox#bboxdonation_billing_txtLastName {
+    display: block;
+    width: 100%; }
+    @media (min-width: 768px) {
+      #mongo-form .BBFormTextbox#bboxdonation_billing_txtLastName {
+        margin-left: 160px; } }
+    @media (min-width: 600px) {
+      #mongo-form .BBFormTextbox#bboxdonation_billing_txtLastName {
+        margin-top: 10px;
+        max-width: 350px; } }
+  #mongo-form .BBFormTextbox#bboxdonation_billing_billingAddress_txtUKCity {
+    max-width: 100%;
+    width: 100%; }
+    @media (min-width: 600px) {
+      #mongo-form .BBFormTextbox#bboxdonation_billing_billingAddress_txtUKCity {
+        max-width: 350px; } }
+#mongo-form .BBFormTextArea {
+  border: 1px solid #c6c6c6;
+  border-radius: 0;
+  min-height: 120px;
+  padding: .5rem;
+  resize: vertical; }
+#mongo-form .BBFormFieldLabel {
+  font-weight: 400;
+  line-height: 1.4rem;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-top: .5rem;
+  text-align: left; }
+  #mongo-form .BBFormFieldLabel#bboxdonation_payment_lblSecCode {
+    text-align: right; }
+  #mongo-form .BBFormFieldLabel#bboxdonation_billing_lblOptInIntro {
+    max-width: 100%; }
+  #mongo-form .BBFormFieldLabel.BBFormSummaryTotal {
+    display: none; }
+  @media (max-width: 767.98px) {
+    #mongo-form .BBFormFieldLabel#bboxdonation_billing_lblFullName, #mongo-form .BBFormFieldLabel#bboxdonation_billing_billingAddress_lblUKCityCounty {
+      width: 100%; } }
+#mongo-form .BBDFormSectionComments label,
+#mongo-form .BBDFormSectionComments textarea {
+  margin-left: 0;
+  width: 100%; }
+#mongo-form .BBFormGrid {
+  padding-left: 0; }
+  #mongo-form .BBFormGrid li {
+    list-style: none;
+    margin-left: -3px !important; }
+    #mongo-form .BBFormGrid li input[type=checkbox] {
+      margin-top: 10px !important;
+      width: 20px !important; }
+    #mongo-form .BBFormGrid li:before {
+      display: none; }
+#mongo-form input[type=checkbox] {
+  width: 20px; }
+#mongo-form input[type=checkbox]:checked + label {
+  font-weight: 700; }
+#mongo-form .BBFormCheckboxLabel {
+  font-weight: 400; }
+#mongo-form .BBFormErrorBlock {
+  border: none;
+  border-radius: 0;
+  border-top: 2px solid #d36601;
+  border-bottom: 2px solid #d36601;
+  background-color: #fffaf5;
+  color: #d36601;
+  max-width: 100%; }
+  #mongo-form .BBFormErrorBlock ul {
+    margin-bottom: .5rem; }

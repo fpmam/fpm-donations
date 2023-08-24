@@ -1,0 +1,239 @@
+/* Footer */
+.footer
+{
+  background-color: $header-footer-background;
+
+  .footer-inner
+  {
+
+    h6
+    {
+      color: $green;
+      margin-bottom: 0.5rem;
+    }
+
+    .footer-container
+    {
+      display: block;
+      width: 100%;
+      padding-bottom: 2rem;
+      padding-top: 2rem;
+
+      .footer-useful-links
+      {
+        text-align: left;
+        vertical-align: top;
+
+        .menus {
+          display: inline-block;
+          margin: 0 9% 0 0;
+          vertical-align: top;
+          width: 100%;
+        }
+
+        ul
+        {
+          display: block;
+          width: 100%;
+          list-style: none;
+          margin: 0 0 1.5rem;
+          padding: 0;
+          background: none;
+
+          li
+          {
+            background: none;
+            color: $light-grey2;
+            display: block;
+            font-size: .9rem;
+            font-weight: 400;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            
+            @media (max-width: 767.98px) {
+              white-space: nowrap;
+            }
+
+            a
+            {
+              color: $light-grey2;
+              display: block;
+              text-decoration: none;
+              word-break: break-word;
+
+              &:hover,
+              &:focus,
+              &:active
+              {
+                color: $white-text;
+                text-decoration: underline;
+              }
+            }
+
+            .children {
+              display: none;
+            }
+          }
+        }
+      }
+
+      a {
+        color: $light-grey2;
+        font-weight: 400;
+        text-decoration: none;
+
+        &:hover,
+        &:focus,
+        &:active
+        {
+          text-decoration: underline;
+        }
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      h6 {
+        font-size: 1.1rem;
+      }
+
+      .footer-social-links
+      {
+        vertical-align: top;
+
+        .footer-social-links-container
+        {
+          width: 200;
+          margin-left: auto;
+          a
+          {
+            border-radius: 3px;
+            background-color: $white-text;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 60%;
+            float: right;
+            height: 34px;
+            margin-left: .5rem;
+            opacity: 1;
+            width: 34px;
+
+            &:hover {
+              opacity: .9;
+            }
+            &#linkedin {
+              background-image: url(assets/icons/linkedin.svg);
+            }
+
+            &#youtube {
+              background-image: url(assets/icons/youtube.svg);
+            }
+
+            &#facebook {
+              background-image: url(assets/icons/facebook.svg);
+              background-size: 30%;
+            }
+
+            &#twitter {
+              background-image: url(assets/icons/twitter.svg);
+            }
+
+            span {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+
+    .ftr-copyright {
+      p {
+        font-size: .85rem;
+        margin-bottom: 5px;
+
+        a {
+          font-size: .85rem;
+          text-decoration: underline;
+
+          &:hover,
+          &:focus,
+          &:active {
+            text-decoration: none;
+          }
+
+        }
+
+        span {
+          display: block;
+          margin-bottom: 1rem;
+          @media (min-width: 768px) {
+            display: inline;
+            margin-bottom: 0;
+          }
+        }
+        .sep {
+          color: $mid-grey2;
+          padding: 0 .75rem;
+        }
+      }
+    }
+  }
+
+  strong {
+    font-weight: 800;
+  }
+
+  hr {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $mid-grey2;
+    margin: 2rem 0 1rem;
+  }
+
+  p {
+    font-size: .8rem;
+    color: $light-grey2;
+  }
+
+  .footer-logos {
+    img {
+      display: inline-block;
+      float: left;
+      border-radius: 6px;
+      margin: 0 5% 5% 0;
+      vertical-align: top;
+      width: 47%;
+
+      &:nth-of-type(2n+2) {
+        margin: 0 0 5% 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .footer .footer-inner .footer-container {
+    .footer-social-links {
+      float: left;
+      width: 100%;
+      .footer-social-links-container {
+        width: 168px;
+        margin: 1rem 0;
+        a {
+          margin-left: 0;
+          margin-right: .5rem;
+        }
+      }
+    }
+    a#contact-link {
+      bottom: auto;
+      position: relative;
+      left: 0;
+      right: auto;
+      text-align: left;
+    }
+  }
+
+}

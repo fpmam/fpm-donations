@@ -1,0 +1,63 @@
+.button-section
+{
+  padding-bottom: 3rem;
+
+  &.black       { &.left { .button-inner { .container { a { background-color: $black-text; } } } } }
+  &.green       { &.left { .button-inner { .container { a { background-color: $green; } } } } }
+  &.pink        { &.left { .button-inner { .container { a { background-color: $pink; } } } } }
+  &.blue        { &.left { .button-inner { .container { a { background-color: $blue; } } } } }
+  &.orange      { &.left { .button-inner { .container { a { background-color: $orange; } } } } }
+  &.dark-green  { &.left { .button-inner { .container { a { background-color: $dark-green; } } } } }
+
+  &.left
+  {
+    .button-inner
+    {
+      .container
+      {
+        a
+        {
+          color: $white-text;
+          background-color: $black-text;
+          border: none;
+          border-radius: 5px;
+          padding: 0.75rem 1rem;
+          text-decoration: none;
+
+          &:hover, &:focus
+          {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+
+  &.centre
+  {
+    .button-inner
+    {
+      .container
+      {
+        display: flex;
+
+        a
+        {
+          margin-left: auto;
+          margin-right: auto;
+          color: $black-text;
+          background-color: $white-text;
+          border: 1px solid $black-text;
+          border-radius: 5px;
+          padding: 0.75rem 1rem;
+          text-decoration: none;
+
+          &:hover, &:focus
+          {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+/* Variables */
+
+// Section colours (also selectable for carousel text panels):
+$green: #6ca638;		// About us
+$pink: #b23562;			// Services
+$blue: #027d9a;			// News
+$orange: #d36601;		// Get involved
+
+$greenHover: #7aaf4a;	// Lighter green
+$pinkHover: #c04f77;	// Lighter pink
+$blueHover: #178ea9;	// Lighter blue
+$orangeHover: #e7862c;	// lighter orange
+
+$greenLightBg: #fafdf7;	// Very light bg green
+$pinkLightBg: #fff5f9;	// Very light bg pink
+$blueLightBg: #f6fdff;	// Very light bg blue
+$orangeLightBg: #fffaf5;	// Very light bg orange
+
+$orangeBtn	: #ec6712;	// Orange buttons eg donate
+$orangeBtnHover: #ea803c;						
+
+// Other colours:
+$black: #000;
+$black-text: #33383C;
+$grey-text: #706f6f;
+$white-text: #ffffff;
+$light-grey1: #ccc; 			// Header nav links
+$light-grey2: #dadada; 			// Footer nav links
+$light-grey3: #e4e4e3;			// Full width tiles border
+$light-grey4: #9d9c9c;			// Full width tiles title underline
+$light-grey5: #f6f6f6;			// Services background
+$light-grey6: #c6c6c6;			// Post list sep bars
+$light-grey7: #ececec;			// Donation first step bg
+$mid-grey1: #575756;			// Sticky nav links
+$mid-grey2: #6F6F6E; 			// Home intro text
+$mid-grey3: #8E8D8D;			// Sticky nav links:hover
+$mid-grey4: #b2b2b2;			// Sep bar on text tiles
+$header-footer-background: #3c3c3b; // Header and footer background
+$header-footer-background-fade: #61615f; // Slightly lighter than Header and footer background
+$grey-section-background: #f1f1f1;  // Background strip light grey
+$footer-strip-background: #e9e9e9;  // Background strip light grey for strip above footer
+$dark-green: #44693D;               // For 'Our resources' title on homepage
+
+/* Maximum Width of Centre Content */
+$max-width: 1065px;
+
+/************************************************************/
+//
+// Old Variables
+//
+/************************************************************/
+$white: #fff;
+$lighter-grey: #f1f2f2;
+$light-grey: #ebebec;
+$light-mid-grey: #d1d3d4;
+$mid-grey: #6d6d6b;
+$dark-grey: #3c3b3b;
+$hub-grey: #31363B;
+$red: #e52528;
+$btn-grey: #808285;
+
+/* Section Colours */
+$our-company: #5c426c;
+$our-people: #a61f7d;
+$our-news: #4c7fa3;
+$our-noticeboard: #cb701b;
+$our-library: #6f8352;
+
+$our-company-light: #c78cb2;
+
+$hub-purple: #54446A;
+$hub-pink: #8D2279;
+$hub-green: #748154;
+$hub-brown: #907957;
+$hub-blue: #5E7EA0;
+$hub-orange: #B27032;
+$hub-dark-orange: #ae5f15;
+
+/* Error / Success */
+$error: #a61f7d;
+$success: #6f8352;

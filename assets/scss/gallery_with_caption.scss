@@ -1,0 +1,48 @@
+/* Gallery with Button Panel */
+.gallery-with-button-panel
+{
+  width: 100%;
+  background-color: $light-grey5;
+  margin-bottom: 3rem;
+
+  @media (max-width: 767.98px) {
+    height: auto;
+  }
+
+  .gallery-with-button-panel-inner {
+
+    .gallery-with-button-panel-container {
+
+      .gallery {
+        @media (min-width: 992px) {
+          padding-right: 5%;
+        }
+      }
+
+      .gallery-caption {
+        padding: 1rem 15px;
+
+        @media (min-width: 768px) {
+          padding: 3rem 15px;
+        }
+
+        strong {
+          color: $green;
+          
+          body.about-us & {
+            color: $pink;
+          }
+          body.services & {
+            color: $green;
+          }
+          body.news & {
+            color: $blue;
+          }
+          body.get-involved & {
+            color: $orange;
+          }
+        }
+      }
+    }
+  }
+}

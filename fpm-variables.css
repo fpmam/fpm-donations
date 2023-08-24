@@ -1,0 +1,73 @@
+:root {
+    /* Section colours */
+    --green: #6ca638;
+    --pink: #b23562;
+    --blue: #027d9a;
+    --orange: #d36601;
+
+    --greenHover: #7aaf4a;
+    --pinkHover: #c04f77;
+    --blueHover: #178ea9;
+    --orangeHover: #e7862c;
+
+    --greenLightBg: #fafdf7;
+    --pinkLightBg: #fff5f9;
+    --blueLightBg: #f6fdff;
+    --orangeLightBg: #fffaf5;
+
+    --orangeBtn: #ec6712;
+    --orangeBtnHover: #ea803c;
+
+    /* Other colours */
+    --black: #000;
+    --black-text: #33383C;
+    --grey-text: #706f6f;
+    --white-text: #ffffff;
+    --light-grey1: #ccc;
+    --light-grey2: #dadada;
+    --light-grey3: #e4e4e3;
+    --light-grey4: #9d9c9c;
+    --light-grey5: #f6f6f6;
+    --light-grey6: #c6c6c6;
+    --light-grey7: #ececec;
+    --mid-grey1: #575756;
+    --mid-grey2: #6F6F6E;
+    --mid-grey3: #8E8D8D;
+    --mid-grey4: #b2b2b2;
+    --header-footer-background: #3c3c3b;
+    --header-footer-background-fade: #61615f;
+    --grey-section-background: #f1f1f1;
+    --footer-strip-background: #e9e9e9;
+    --dark-green: #44693D;
+
+    /* Old Variables */
+    --white: #fff;
+    --lighter-grey: #f1f2f2;
+    --light-grey: #ebebec;
+    --light-mid-grey: #d1d3d4;
+    --mid-grey: #6d6d6b;
+    --dark-grey: #3c3b3b;
+    --hub-grey: #31363B;
+    --red: #e52528;
+    --btn-grey: #808285;
+
+    /* Section Colours */
+    --our-company: #5c426c;
+    --our-people: #a61f7d;
+    --our-news: #4c7fa3;
+    --our-noticeboard: #cb701b;
+    --our-library: #6f8352;
+    --our-company-light: #c78cb2;
+
+    --hub-purple: #54446A;
+    --hub-pink: #8D2279;
+    --hub-green: #748154;
+    --hub-brown: #907957;
+    --hub-blue: #5E7EA0;
+    --hub-orange: #B27032;
+    --hub-dark-orange: #ae5f15;
+
+    /* Error / Success */
+    --error: #a61f7d;
+    --success: #6f8352;
+}

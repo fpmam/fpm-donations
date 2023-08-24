@@ -1,0 +1,123 @@
+/* Features */
+.features
+{
+  border-bottom: 26px solid $footer-strip-background;
+  background-color: $light-grey5;
+
+  .features-inner
+  {
+    padding-top: 3rem;
+    padding-bottom: 2.5rem;
+
+    @media (min-width: 768px) {
+      padding-bottom: 3.5rem;
+    }
+
+    .features-container
+    {
+      .row
+      {
+
+        .feature-item
+        {
+          text-align: left;
+          vertical-align: top;
+          margin-bottom: 2rem;
+
+          @media (min-width: 768px) {
+            margin-bottom: 0;
+          }
+
+          &:last-child
+          {
+            margin-right: 0px;
+          }
+
+          a {
+            color: #fff;
+            overflow: hidden;
+            text-decoration: none;
+          }
+          .image-wrapper {
+            background-color: $light-grey3;
+          }
+
+          .features-text-container
+          {
+            bottom: 0px;
+            width: 100%;
+            background-color: $header-footer-background;
+            @include transform-item;
+
+            body.about-us &,
+            body.people &,
+            body.resources & {
+              background-color: $pink;        
+            }
+
+            body.services & {
+              background-color: $green;        
+            }
+
+            body.news &,
+            body.blog & {
+              background-color: $blue;        
+            }
+
+            body.get-involved & {
+              background-color: $orange;        
+            }
+
+            h4
+            {
+              color: $white-text;
+              font-family: 'Muli', Helvetica, Arial, sans-serif;
+              font-size: .8rem;
+              font-weight: 700;
+              margin: 0;
+              padding: 1rem 0;
+              text-align: center;
+              text-transform: uppercase;
+              width: 100%;
+
+              @media (min-width: 768px) {
+                font-size: .8rem;
+              }
+              @media (min-width: 992px) {
+                font-size: .9rem;
+              }
+            }
+
+            
+          }
+          &:hover {
+            .features-text-container
+            {
+              background-color: $mid-grey;
+              
+
+              body.about-us &,
+              body.people &,
+              body.resources & {
+                background-color: $pinkHover;        
+              }
+
+              body.services & {
+                background-color: $greenHover;        
+              }
+
+              body.news &,
+              body.blog & {
+                background-color: $blueHover;        
+              }
+
+              body.get-involved & {
+                background-color: $orangeHover;        
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,283 @@
+/* Button Panel */
+.button-panel
+{
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  background-color: transparent;
+
+  .button-panel-container
+  {
+    display: flex;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin-top: 1rem;
+
+    a
+    {
+      background-color: $black-text;
+      border-radius: 3px;
+      display: flex;
+      float: left;
+      width: 48%;
+      height: 48%;
+      opacity: 1;
+      padding: 0 0 10px;
+      position: relative;
+      text-align: center;
+      margin-bottom: 4%;
+      @include transform-item;
+
+      img
+      {
+        display: block;
+        margin: 0 auto;
+        left: 25%;
+        padding: 1px;
+        position: absolute;
+        text-align: center;
+        top: 17%;
+        //width: auto;
+        max-width: 50%;
+        max-height: 50px;
+        @include transform-item;
+
+      }
+
+      span {
+        bottom: 10px;
+        color: #fff;
+        display: block;
+        font-size: .8rem;
+        font-weight: 600;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        width: 100%;
+      }
+
+
+      &.donate
+      {
+        background-color: $orange;
+
+        img {
+          top: 19%;
+        }
+      }
+
+      &.service-finder
+      {
+        background-color: $green;
+        
+        img {
+          left: 30%;
+          max-width: 34%;
+          top: 20%;
+        }
+      }
+
+      &.contact-us
+      {
+        background-color: $blue;
+
+        img {
+          top: 19%;
+        }
+      }
+
+      &.get-involved
+      {
+        background-color: $pink;
+        
+        img {
+          left: 29%;
+          top: 19%;
+          max-width: 40%;
+        }
+      }
+
+
+      &:hover {
+
+        img {
+          transform: scale(1.1);
+        }
+
+        &.donate
+        {
+          background-color: $orangeHover;
+        }
+
+        &.service-finder
+        {
+          background-color: $greenHover;
+        }
+
+        &.contact-us
+        {
+          background-color: $blueHover;
+        }
+
+        &.get-involved
+        {
+          background-color: $pinkHover;
+        }
+      }
+    }
+  }
+}
+
+.home .button-panel {
+  display: block;
+}
+
+@media (max-width: 575px)
+{
+  .button-panel .button-panel-container a {
+    width: 49%;
+    margin-bottom: 2%;
+
+    &:nth-child(even)
+    {
+      margin-left: 2%;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .button-panel .button-panel-container a {
+    width: 23.5%;
+    margin-bottom: 2%;
+    margin-left: 2%;
+
+    &:nth-child(1),
+    &:nth-child(5) {
+      margin-left: 0px;
+    }
+  }
+}
+
+@media (max-width: 1049px) {
+  body:not(.home) .button-panel {
+    display: none
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .button-panel .button-panel-container {
+    a {
+      width: 23.5%;
+      margin-bottom: 2%;
+      margin-left: 2%;
+
+      &:nth-child(1),
+      &:nth-child(5) {
+        margin-left: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .button-panel .button-panel-container {
+    margin-top: 0;
+
+    a
+    {
+      width: 48%;
+      height: 90.75px;
+      margin-bottom: 4%;
+      margin-left: 4%;
+
+      &:nth-child(even)
+      {
+        margin-left: 4%;
+      }
+
+      &:nth-child(odd)
+      {
+        margin-left: 0px;
+      }
+
+      &:nth-last-child(1)
+      {
+        margin-bottom: 0px;
+      }
+
+      &:nth-last-child(2)
+      {
+        margin-bottom: 0px;
+      }
+
+      img {
+        max-width: 50px;
+        max-height: 40px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  .button-panel .button-panel-container {
+    margin-top: 0;
+    a {
+      width: 48%;
+      height: 110px;
+
+      &:nth-child(even)
+      {
+        margin-left: 4%;
+      }
+
+      &:nth-last-child(1)
+      {
+        margin-bottom: 0px;
+      }
+
+      &:nth-last-child(2)
+      {
+        margin-bottom: 0px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .button-panel .button-panel-container {
+    margin-top: 0;
+    a {
+      height: 130px;
+
+      img {
+        max-height: 60px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .button-panel .button-panel-container {
+    margin-top: 0;
+    a {
+      height: 150px;
+      
+      img {
+        max-height: 70px;
+      }
+    }
+  }
+}
+
+.our-news:not(.page-id-94) {
+  .button-panel
+  {
+    display: none;
+  }
+}

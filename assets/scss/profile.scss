@@ -1,0 +1,70 @@
+body.our-company      { .profile { .profile-inner { .profile-container { .left-column { .row { .column { &.name { color: $our-company; } } } } } } } }
+body.our-people       { .profile { .profile-inner { .profile-container { .left-column { .row { .column { &.name { color: $our-people; } } } } } } } }
+body.our-news         { .profile { .profile-inner { .profile-container { .left-column { .row { .column { &.name { color: $our-news; } } } } } } } }
+body.our-noticeboard  { .profile { .profile-inner { .profile-container { .left-column { .row { .column { &.name { color: $our-noticeboard; } } } } } } } }
+body.our-library      { .profile { .profile-inner { .profile-container { .left-column { .row { .column { &.name { color: $our-library; } } } } } } } }
+
+.profile
+{
+  background-color: $light-grey;
+
+  .profile-inner
+  {
+    .profile-container
+    {
+
+        @media (max-width: 767px)
+        {
+          display: block;
+          width: 100%;
+          padding-bottom: 0px;
+        }
+
+        .row
+        {
+          padding-bottom: 1rem;
+
+          .column
+          {
+            &.name
+            {
+              font-weight: 600;
+              font-size: .8rem;
+              width: 20%;
+              color: $our-people;
+              vertical-align: top;
+            }
+
+            &.value
+            {
+              font-size: .8rem;
+              color: $dark-grey;
+              vertical-align: top;
+            }
+          }
+        
+      }
+
+    }
+  }
+  img
+  {
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+  }
+}
+
+.profile-button
+{
+  background-color: $white;
+
+  .profile-button-inner
+  {
+    .profile-button-container
+    {
+      padding-top: 2rem;
+      padding-bottom: 4rem;
+    }
+  }
+}

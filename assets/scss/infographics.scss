@@ -1,0 +1,273 @@
+.infographics {
+	background-color: $light-grey5;
+	margin-bottom: 4rem;
+	padding: 2rem 0;
+
+	.circle {
+		display: block;
+		position: relative;
+		text-align: center;
+		line-height: 1.2;
+		margin: 0 auto;
+		width: 300px;
+
+		@media (min-width: 576px) { 
+			width: 150px;
+		}
+
+		@media (min-width: 768px) {
+			width: 200px;
+		}
+		@media (min-width: 992px) {
+			width: 270px;
+		}
+		@media (min-width: 1200px) {
+			width: 330px;
+		}
+		@media (min-width: 1400px) {
+			width: 390px;
+		}
+
+
+		canvas {
+		  vertical-align: top;
+		  height: 270px!important;
+		  width: 270px!important;
+		  margin: auto 0!important;
+
+			@media (min-width: 576px) { 
+				height: 150px!important;
+				width: 150px!important;
+				margin: auto 0!important;
+			}
+
+			@media (min-width: 768px) {
+				height: 183px!important;
+				width: 183px!important;
+				margin: auto 0!important;
+			}
+
+		  	@media (min-width: 992px) {
+				height: 253px!important;
+				width: 253px!important;
+				margin: auto 0!important;
+			}
+
+			@media (min-width: 1200px) {
+				height: 313px!important;
+				width: 313px!important;
+				margin: auto 0!important;
+			}
+
+			@media (min-width: 1400px) {
+				height: 373px!important;
+				width: 373px!important;
+				margin: auto 0!important;
+			}
+		}
+
+		strong {
+			font-family: 'Muli';
+			font-weight: 800;
+			position: absolute;
+			top: 36%;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			font-size: 4rem;
+
+			@media (min-width: 576px) { 
+				font-size: 2rem;
+				top: 35%;
+			}
+
+			@media (min-width: 768px) {
+				font-size: 2.5rem;
+				top: 35%;
+			}
+			@media (min-width: 992px) {
+				font-size: 3rem;
+				top: 37%;
+			}
+			@media (min-width: 1200px) {
+				font-size: 4rem;
+				top: 38%;
+			}
+			@media (min-width: 1400px) {
+				font-size: 5rem;
+			}
+
+			i {
+			  font-style: normal;
+			  font-weight: normal;
+			}
+
+			&.pound {
+				span {
+					padding-left: 40px;
+					position: relative;
+
+					@media (min-width: 576px) { 
+						padding-left: 20px;
+					}
+					@media (min-width: 768px) {
+						padding-left: 25px;
+					}
+					@media (min-width: 992px) {
+						padding-left: 30px;
+					}
+					@media (min-width: 1200px) {
+						padding-left: 40px;
+					}
+					@media (min-width: 1400px) {
+						padding-left: 50px;
+					}
+
+					&:after {
+						content: '£';
+						position: absolute;
+						left: 0;
+					}
+				}
+			}
+
+			&.percentage {
+				span {
+					padding-right: 60px;
+					position: relative;
+
+					@media (min-width: 576px) { 
+						padding-right: 30px;
+					}
+					@media (min-width: 768px) {
+						padding-right: 38px;
+					}
+					@media (min-width: 992px) {
+						padding-right: 45px;
+					}
+					@media (min-width: 1200px) {
+						padding-right: 60px;
+					}
+					@media (min-width: 1400px) {
+						padding-right: 75px;
+					}
+
+					&:after {
+						content: '%';
+						position: absolute;
+						right: 0;
+					}
+				}
+			}
+
+
+		}
+
+		&:before {	
+			border-radius: 50%;
+			content: '';
+			height: 0;
+			left: 40px;
+			position: absolute;
+			padding-top: 220px;
+			top: 25px;
+			width: 220px;
+			z-index: 0;
+
+
+			@media (min-width: 576px) { 
+				left: 17px;
+			    padding-top: 116px;
+			    top: 17px;
+			    width: 116px;
+			}
+
+			@media (min-width: 768px) {
+				left: 27px;
+			    top: 19px;
+			    padding-top: 145px;
+			    width: 145px;
+			}
+
+			@media (min-width: 992px) {
+				left: 33px;
+				top: 25px;
+				padding-top: 203px;
+				width: 203px;
+			}
+
+			@media (min-width: 1200px) {
+				left: 42px;
+			    top: 35px;
+			    padding-top: 244px;
+			    width: 244px;
+			}
+
+			@media (min-width: 1400px) {
+				left: 51px;
+			    top: 43px;
+			    padding-top: 288px;
+			    width: 288px;
+			}
+		}
+
+		span {
+		  display: inline-block;
+		  color: #aaa;
+		  text-align: center;
+		}
+
+		&.circle-1 {
+			&:before {
+				background-color:#e5d5d8; 
+			}
+			strong {
+				span {
+					color: #b23562;
+				}
+			}
+		}
+		&.circle-2 {
+			&:before {
+				background-color:#d3dce4; 
+			}
+			strong {
+				span {
+					color: #027d9a;
+				}
+			}
+		}
+		&.circle-3 {
+			&:before {
+				background-color:#dfe6d5; 
+			}
+			strong {
+				span {
+					color: #6ca638;
+				}
+			}
+		}
+
+
+	}
+
+	p {
+		color: $mid-grey1;
+		padding: 1rem 2rem;
+		text-align: center;
+
+		@media (min-width: 576px) { 
+			font-size: 1rem;
+			padding: 1rem 0;
+		}
+
+		@media (min-width: 768px) {
+			font-size: 1rem;
+			padding: 1rem;
+		}
+		@media (min-width: 992px) {
+			font-size: 1.2rem;
+			padding: 1rem 2rem;
+		}
+	}
+}

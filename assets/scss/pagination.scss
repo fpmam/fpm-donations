@@ -1,0 +1,105 @@
+.pages
+{
+  display: table;
+  width: 100%;
+  font-size: 1rem;
+  a {
+    font-size: 1rem;
+  }
+
+  @media (min-width: 992px)
+  {
+    div[class*="pages-"] {
+      padding: 0 0 2rem;
+    }
+  }
+
+  .pages-previous
+  {
+    display: table-cell;
+    text-align: left;
+    width: 15%;
+    cursor: pointer;
+    cursor: hand;
+
+    a
+    {
+      color: #6d6d6b;
+      font-weight: 300;
+      text-decoration: none;
+      white-space: nowrap;
+
+      &:hover,
+      &:focus
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .pages-spacer
+  {
+    display: table-cell;
+  }
+
+  .page-number
+  {
+    display: table-cell;
+    text-align: center;
+    width: 3%;
+    cursor: pointer;
+    cursor: hand;
+
+    &.active
+    {
+      a
+      {
+        font-weight: 700;
+      }
+    }
+
+    a
+    {
+      font-weight: 300;
+      text-decoration: none;
+
+      &:hover,
+      &:focus
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .pages-next
+  {
+    display: table-cell;
+    text-align: right;
+    width: 15%;
+    cursor: pointer;
+    cursor: hand;
+
+    a
+    {
+      font-weight: 300;
+      text-decoration: none;
+
+      &:hover,
+      &:focus
+      {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.single-post .pages {
+  margin-bottom: 4rem;
+}
+
+.voluntary-openings .pages-previous,
+.our-recruitment .pages-previous {
+  span {
+    display: none;
+  }
+}

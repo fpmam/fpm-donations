@@ -1,0 +1,140 @@
+/* donations */
+.donations .col-12 {
+  padding-bottom: 0;
+  padding-right: 15px; }
+.donations .payment-triggers {
+  display: flex; }
+  .donations .payment-triggers .payment-trigger {
+    background-color: #ececec !important;
+    border-radius: 0;
+    color: #6F6F6E !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    flex: 1;
+    outline: none;
+    padding: 1rem 1rem .8rem;
+    text-transform: uppercase; }
+    .donations .payment-triggers .payment-trigger:hover, .donations .payment-triggers .payment-trigger:focus, .donations .payment-triggers .payment-trigger:active {
+      background-color: #dadada !important;
+      box-shadow: none; }
+    .donations .payment-triggers .payment-trigger.active {
+      background-color: #575756 !important;
+      color: #fff !important;
+      outline: none; }
+.donations .payment-panel {
+  background-color: #ececec;
+  padding: 1rem 1.5rem 1.5rem; }
+  .donations .payment-panel .frequency {
+    font-size: 1.5rem; }
+    @media (min-width: 768px) {
+      .donations .payment-panel .frequency {
+        font-size: 1.8rem; } }
+    .donations .payment-panel .frequency span {
+      display: none; }
+      .donations .payment-panel .frequency span.active {
+        display: inline; }
+  .donations .payment-panel .image-wrapper {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%; }
+  .donations .payment-panel .button-wrapper {
+    display: flex;
+    overflow: visible;
+    z-index: 1; }
+    .donations .payment-panel .button-wrapper .btn-amt {
+      background-color: #575756 !important;
+      border-radius: 0;
+      color: #dadada;
+      flex: 1;
+      font-size: 1.8rem;
+      font-weight: 600;
+      min-width: auto;
+      overflow: visible;
+      padding: .6rem;
+      position: relative; }
+      .donations .payment-panel .button-wrapper .btn-amt:after {
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-top: 10px solid #575756;
+        bottom: 0;
+        content: '';
+        height: 0;
+        left: 50%;
+        margin-left: -10px;
+        outline: none;
+        position: absolute;
+        transition: .3s all ease;
+        transform: translateZ(0);
+        width: 0;
+        z-index: -1; }
+      .donations .payment-panel .button-wrapper .btn-amt:hover, .donations .payment-panel .button-wrapper .btn-amt:focus, .donations .payment-panel .button-wrapper .btn-amt:active {
+        box-shadow: none;
+        color: #fff !important;
+        outline: none; }
+        .donations .payment-panel .button-wrapper .btn-amt:hover:after, .donations .payment-panel .button-wrapper .btn-amt:focus:after, .donations .payment-panel .button-wrapper .btn-amt:active:after {
+          bottom: -10px; }
+      .donations .payment-panel .button-wrapper .btn-amt.active, .donations .payment-panel .button-wrapper .btn-amt.initial-select {
+        background-color: #d36601 !important;
+        color: #fff !important; }
+        .donations .payment-panel .button-wrapper .btn-amt.active:after, .donations .payment-panel .button-wrapper .btn-amt.initial-select:after {
+          bottom: -10px;
+          border-top: 10px solid #d36601 !important; }
+  .donations .payment-panel .could-pay p {
+    display: none; }
+    .donations .payment-panel .could-pay p.active, .donations .payment-panel .could-pay p.initial-select {
+      display: block; }
+  .donations .payment-panel #paymentForm .form-group {
+    margin: 0; }
+    .donations .payment-panel #paymentForm .form-group .input-wrapper {
+      display: block;
+      height: 60px;
+      margin-bottom: 2rem;
+      position: relative;
+      width: 100%; }
+      .donations .payment-panel #paymentForm .form-group .input-wrapper .currency-symbol {
+        left: 15px;
+        font-size: 1.8rem;
+        font-weight: 700;
+        height: 45px;
+        line-height: 45px;
+        position: absolute;
+        top: 8px;
+        width: 30px;
+        z-index: 2; }
+      .donations .payment-panel #paymentForm .form-group .input-wrapper #amount {
+        border: 3px solid #fff;
+        border-radius: 0;
+        font-size: 1.8rem;
+        font-weight: 600;
+        height: 60px;
+        left: 0;
+        top: 0;
+        padding: 3px 10px 3px 40px;
+        position: absolute; }
+        .donations .payment-panel #paymentForm .form-group .input-wrapper #amount::placeholder {
+          color: #b2b2b2;
+          font-size: 1.7rem;
+          text-transform: uppercase; }
+        .donations .payment-panel #paymentForm .form-group .input-wrapper #amount:hover, .donations .payment-panel #paymentForm .form-group .input-wrapper #amount:focus, .donations .payment-panel #paymentForm .form-group .input-wrapper #amount:active {
+          border: 3px solid #d36601;
+          box-shadow: none; }
+  .donations .payment-panel #paymentForm #submitButton {
+    width: 100%;
+    background-color: #ec6712;
+    border-radius: 0;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 1rem;
+    text-transform: uppercase; }
+    .donations .payment-panel #paymentForm #submitButton:hover, .donations .payment-panel #paymentForm #submitButton:focus, .donations .payment-panel #paymentForm #submitButton:active {
+      box-shadow: none;
+      background-color: #ea803c; }
+  .donations .payment-panel #paymentForm .error {
+    background-color: #9d9c9c;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    display: none;
+    font-weight: 500; }

@@ -1,0 +1,265 @@
+/* Carousel */
+.carousel-wrapper {
+
+  .carousel
+  {
+    background-color: $grey-section-background;  
+
+    .carousel-indicators {
+      left: 50%;
+      -ms-flex-pack: center;
+      justify-content: flex-end;
+      margin: 0 1.2rem 1.2rem 0;
+
+      li {
+        background-color: $green;
+        border-radius: 50%;
+        border: none;
+        height: 16px;
+        opacity: 1;
+        width: 16px;
+        &:hover {
+          background-color: $white-text;
+        }
+        &.active {
+          background-color: $green;
+        }
+      }
+    }
+
+    .carousel-item {
+      position: relative; 
+
+      .carousel-caption {
+          background: $green;
+          border-radius: 3px;
+          box-shadow: 7px 7px 14px -4px rgba(0,0,0,0.5);
+          bottom: auto;
+          color: $white;
+          height: auto;
+          left: 50%;
+          right: auto;
+          padding: 1rem 2rem;
+          position: absolute;
+          text-align: left;
+          top: 40px;
+          width: 40%;
+          z-index: 10;
+
+
+          @media (min-width: 576px) {}
+          @media (min-width: 768px) {}
+          @media (min-width: 992px) {
+            margin-left: -465px;
+          }
+          @media (min-width: 1200px) {
+            margin-left: -555px;
+          }
+          @media (min-width: 1400px) {
+            margin-left: -634px;
+
+          }
+          @media (min-width: 1600px) {
+            margin-left: -710px;
+
+          }
+      }
+
+      .carousel-text
+      {
+        width: 100%;
+        height: 100%;
+        text-align: left;
+        vertical-align: middle;
+        margin-bottom: 1rem;
+        h2
+        {
+          color: $white-text;
+          font-size: 2.4rem;
+        }
+
+        p {
+          font-size: 1rem;
+          color: $white-text;
+          margin-bottom: .3rem;
+          padding-right: 5%;
+
+          a {
+            color: $white-text;
+          }
+        }
+      }
+
+    }
+
+    &.green
+    {
+      .carousel-indicators
+      {
+        li
+        {
+          background-color: $white-text;
+
+          &.active
+          {
+            background-color: $green;
+          }
+        }
+      }
+
+      .carousel-item
+      {
+        .carousel-caption
+        {
+          background: $green;
+        }
+
+        .carousel-text
+        {
+
+          body.home & {
+            h2
+            {
+              color: $black-text;
+            }
+          }
+
+          p,
+          p a
+          {
+            color: $white-text;
+          }
+        }
+      }
+    }
+
+    &.pink
+    {
+      .carousel-indicators
+      {
+        li
+        {
+          background-color: $white-text;
+
+          &.active
+          {
+            background-color: $pink;
+          }
+        }
+      }
+
+      .carousel-item
+      {
+        .carousel-caption
+        {
+          background: $pink;
+        }
+
+        .carousel-text
+        {
+          h2
+          {
+            color: $white-text;
+          }
+
+          p,
+          p a
+          {
+            color: $white-text;
+          }
+        }
+      }
+    }
+
+    &.blue
+    {
+      .carousel-indicators
+      {
+        li
+        {
+          background-color: $white-text;
+
+          &.active
+          {
+            background-color: $blue;
+          }
+        }
+      }
+
+      .carousel-item
+      {
+        .carousel-caption
+        {
+          background: $blue;
+        }
+
+        .carousel-text
+        {
+          h2
+          {
+            color: $white-text;
+          }
+
+          p,
+          p a
+          {
+            color: $white-text;
+          }
+        }
+      }
+    }
+
+    &.orange
+    {
+      .carousel-indicators
+      {
+        li
+        {
+          background-color: $white-text;
+
+          &.active
+          {
+            background-color: $orange;
+          }
+        }
+      }
+
+      .carousel-item
+      {
+        .carousel-caption
+        {
+          background: $orange;
+        }
+
+        .carousel-text
+        {
+          h2
+          {
+            color: $white-text;
+          }
+
+          p,
+          p a
+          {
+            color: $white-text;
+          }
+        }
+      }
+    }
+  }
+  &.btm-margin {
+    margin-bottom: 4rem;
+  }
+
+  @media (max-width: 1049px) {
+    &.masthead {
+      display: none;
+    }
+  }
+
+  &.masthead {
+    .carousel {
+      border-top: 10px solid $footer-strip-background;  
+    }
+  }
+}

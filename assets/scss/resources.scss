@@ -1,0 +1,145 @@
+.resources-section
+{
+  background-color: $grey-section-background;
+  border-bottom: 50px solid $footer-strip-background;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 4rem;
+
+  body.home & {
+    margin-bottom: 0;
+  }
+
+  @media (min-width: 992px) {
+    padding-bottom: 4.5rem;
+  }
+
+  .resources-inner
+  {
+    .container
+    {
+      .resource
+      {
+        display: block;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        border-radius: 8px;
+        text-decoration: none;
+
+
+        @media (min-width: 576px) {
+          padding: 1rem;
+        }
+        @media (min-width: 768px) {
+          padding: 1rem;
+        }
+        @media (min-width: 992px) {
+          margin-bottom: 0;
+          padding: 1rem;
+        }
+        @media (min-width: 1200px) {
+          padding: 1rem 2rem;
+        }
+
+        &.blue
+        {
+          background-color: $blue;
+
+          &:hover {
+            background-color: $blueHover;
+          }
+        }
+
+        &.pink
+        {
+          background-color: $pink;
+
+          &:hover {
+            background-color: $pinkHover;
+          }
+        }
+
+        &.green
+        {
+          background-color: $green;
+
+          &:hover {
+            background-color: $greenHover;
+          }
+        }
+
+        &.orange
+        {
+          background-color: $orange;
+
+          &:hover {
+            background-color: $orangeHover;
+          }
+        }
+
+        .resource-image-container
+        {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          img
+          {
+            width: 70%;
+            height: auto;
+            @include transform-item;
+
+            @media (min-width: 1400px) {
+              width: 80%;
+            }
+          }
+        }
+
+        &:hover {
+
+          .resource-image-container {
+
+            img {
+              transform: scale(1.1);
+            }
+          }
+
+        }
+
+        hr
+        {
+          width: 100%;
+          margin: .5rem 15px 1rem;
+          border: none;
+          border-bottom: 1px solid $white-text;
+          opacity: 0.25;
+
+          @media (min-width: 1200px) {
+            margin: 1.5rem 15px 2rem;
+          }
+
+        }
+
+        h6
+        {
+          color: $white-text;
+          font-family: 'Muli', Helvetica, Arial, sans-serif;
+          font-size: .7rem;
+          font-weight: 700;
+          text-align: center;
+          text-transform: uppercase;
+          width: 100%;
+
+          @media (min-width: 768px) {
+            font-size: .65rem;
+          }
+          @media (min-width: 992px) {
+            font-size: .9rem;
+          }
+        }
+      }
+    }
+  }
+
+}

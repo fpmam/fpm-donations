@@ -1,0 +1,106 @@
+/* News */
+.news
+{
+  background-color: $white;
+
+  .news-inner
+  {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .news-container
+    {
+      .news-heading
+      {
+        width: 100%;
+        padding: 0.75rem 1.2rem;
+        color: $white;
+        background-color: $our-news;
+        background-image: url(assets/icons/globe.png);
+        background-position: 99%;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        box-sizing: border-box;
+        margin-bottom: 1rem;
+      }
+
+      .news-article-container
+      {
+        padding-bottom: 1rem;
+
+        @media (max-width: 768px)
+        {
+          padding-bottom: 0px;
+        }
+
+        .news-article
+        {
+          position: relative;
+          display: block;
+          float: left;
+          width: 50%;
+          margin-bottom: 1.5rem;
+
+          .news-article-image
+          {
+            display: inline-block;
+            float: left;
+            width: 150px;
+            height: 150px;
+            text-align: left;
+            vertical-align: top;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+          }
+
+          .news-article-text
+          {
+            display: inline-block;
+            float: left;
+            width: calc(100% - 150px);
+            text-align: left;
+            vertical-align: top;
+            padding-left: 1rem;
+            padding-right: 1rem;
+
+            .news-date
+            {
+              font-family: Helvetica, Arial, sans-serif;
+              font-size: 0.75rem;
+              font-weight: 700;
+              width: 100%;
+              margin-bottom: 0px;
+            }
+
+            .news-author
+            {
+              font-family: Helvetica, Arial, sans-serif;
+              font-size: 0.75rem;
+              font-weight: 700;
+              width: 100%;
+              margin-bottom: 0.5rem;
+            }
+
+            h4
+            {
+              color: $our-news;
+              width: 100%;
+              margin-bottom: 0.5rem;
+            }
+
+            .news-body-text
+            {
+              text-overflow: ellipsis;
+            }
+          }
+        }
+      }
+    }
+
+    .news-all-articles
+    {
+      text-align: center;
+    }
+  }
+}

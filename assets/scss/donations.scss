@@ -1,0 +1,216 @@
+/* donations */
+.donations {
+
+	.col-12 {
+		padding-bottom: 0;
+		padding-right: 15px;
+	}
+
+	.payment-triggers {
+		display: flex;
+
+		.payment-trigger {
+			background-color: $light-grey7!important;
+			border-radius: 0; 
+			color: $mid-grey2!important;
+			font-size: 1.2rem;
+			font-weight: 600;
+			flex: 1;
+		    outline: none;
+		    padding: 1rem 1rem .8rem;
+		    text-transform: uppercase;
+
+			&:hover,
+	        &:focus,
+	        &:active {
+				background-color: $light-grey2!important;
+		        box-shadow: none;
+			}
+
+			&.active {
+				background-color: $mid-grey1!important;
+				color: $white!important;
+				outline: none;
+			}
+		}
+	}
+
+	.payment-panel {
+		background-color: $light-grey7;
+		padding: 1rem 1.5rem 1.5rem; 
+
+
+		.frequency {
+			font-size: 1.5rem;
+
+			@media (min-width: 768px) {
+				font-size: 1.8rem;
+			}
+
+			span {
+				display: none;
+
+				&.active {
+					display: inline;
+				}
+			}
+		}
+
+		.image-wrapper {
+			background-position: center;
+			background-size: cover;
+			background-repeat: no-repeat; 
+			height: 100%;
+		}
+
+		.button-wrapper {
+			display: flex;
+			overflow: visible;
+			z-index:1;
+
+			.btn-amt {
+				background-color: $mid-grey1!important;
+				border-radius: 0;
+				color: $light-grey2;
+				flex: 1;
+				font-size: 1.8rem;
+				font-weight: 600;
+				min-width: auto;
+				overflow: visible;
+				padding: .6rem;
+				position: relative;
+
+	            &:after {
+					border-left: 10px solid transparent;
+					border-right: 10px solid transparent;
+					border-top: 10px solid $mid-grey1;
+					bottom: 0;
+					content:'';
+					height: 0;
+					left: 50%;
+					margin-left: -10px;
+					outline: none;
+					position: absolute;
+					transition: .3s all ease;
+					transform: translateZ(0);
+					width: 0;
+					z-index: -1;
+	            }
+
+	            &:hover,
+	            &:focus,
+	            &:active {
+	            	box-shadow: none;
+					color: $white!important;
+					outline: none;
+
+					&:after {
+						bottom: -10px;
+					}
+	            }
+
+	            &.active,
+	            &.initial-select {
+					background-color: $orange!important;
+					color: $white!important;
+
+					&:after {
+	                	bottom: -10px;
+						border-top: 10px solid $orange!important;
+					}
+				}
+
+			}
+		}
+
+		.could-pay {
+			p {
+				display: none;
+				&.active,
+				&.initial-select {
+					display: block;
+				}
+			}
+		}
+
+		#paymentForm {
+
+			.form-group {
+				margin: 0;
+				
+				.input-wrapper {
+					display: block;
+				    height: 60px;
+				    margin-bottom: 2rem;
+					position: relative;
+				    width: 100%;
+
+					.currency-symbol {
+						left: 15px;
+						font-size: 1.8rem;
+						font-weight: 700;
+						height: 45px;
+						line-height: 45px;
+					    position: absolute;
+					    top: 8px;
+					    width: 30px;
+					    z-index: 2;
+					}
+
+					#amount {
+						border: 3px solid $white;
+						border-radius: 0;
+						font-size: 1.8rem;
+						font-weight: 600;
+						height: 60px;
+						left: 0;
+						top: 0;
+						padding: 3px 10px 3px 40px;
+						position: absolute;
+
+						&::placeholder {
+							color: $mid-grey4;
+							font-size: 1.7rem;
+							text-transform: uppercase;
+						}
+
+						&:hover,
+			            &:focus,
+			            &:active {
+							border: 3px solid $orange;
+			            	box-shadow: none;
+						}
+					}
+				}
+			}
+
+			#submitButton {
+				width: 100%;
+				background-color: $orangeBtn;
+				border-radius: 0;
+				color: $white;
+				font-size: 1.2rem;
+				font-weight: 600;
+				padding: 1rem;
+				text-transform: uppercase;
+
+				&:hover,
+	            &:focus,
+	            &:active {
+	            	box-shadow: none;
+					background-color: $orangeBtnHover;
+	            }
+			}
+
+			.error {
+				background-color: $light-grey4;
+				border: none;
+				border-radius: 0;
+				color: #fff;
+				display: none;
+				font-weight: 500;
+			}
+		}
+	}
+
+}

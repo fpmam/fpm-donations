@@ -1,0 +1,955 @@
+/* Forms */
+.gform_wrapper {
+  margin-bottom: 0!important;
+
+  form {
+
+    &.contact-us {
+
+      li {
+        
+        &.select-category {
+          li {
+            padding-right: 0!important;
+            width: 100%;
+
+            @media (min-width: 768px) {
+              display: inline-block;
+              float: left;
+              margin-right: 2%; 
+              width: 49%;
+              clear: none;
+
+              &:nth-child(2n+2) {
+                margin-right: 0; 
+              }
+            }
+
+            @media (min-width: 1200px) {
+              width: 40%;
+            }
+
+            @media (min-width: 1400px) {
+              width: 35%;
+            }
+          }
+        }
+
+        &.first-name,
+        &.surname,
+        &.email,
+        &.email-confirm {
+          padding-right: 0!important;
+          width: 100%;
+
+          @media (min-width: 768px) {
+            display: inline-block;
+            float: left;
+            margin-right: 2%;
+            width: 49%;
+            clear: none;
+          }
+
+          @media (min-width: 1200px) {
+            width: 40%;
+          }
+
+          @media (min-width: 1400px) {
+            width: 35%;
+          }
+
+          input {
+            width: 100%;
+          }
+        }
+
+        @media (min-width: 768px) {
+          &.surname,
+          &.email-confirm {
+            margin-right: 0;
+          }
+        }
+
+        &.your-message {
+          padding: 20px 0 0 0!important;
+          clear: both;
+          float: none;
+        }
+      }
+    }
+    .gform_heading {
+      margin-bottom: 1rem;
+
+      .gform_description {
+        display: none;
+      }
+    }
+
+    .gform_body {
+      .gform_fields {
+
+        li.gfield {
+
+          input[type=radio] {
+            margin: 3px 3px 0 0;
+          }
+
+          input[type=text],
+          input[type=email],
+          input[type=tel],
+          textarea {
+            border: 1px solid $light-grey6;
+            resize: vertical;
+          }
+
+          div.ginput_complex {
+
+            label {
+              color: $mid-grey;
+            }
+          }
+
+          div.gfield_consent_description {
+            font-size: 1rem;
+            line-height: 1.2rem;
+            padding: .5rem; 
+          }
+
+          div.ginput_container_consent {
+            margin-bottom: 3rem!important;
+
+            label {
+              width: 85%;
+            }
+
+            input[type=checkbox] {
+              margin-top: 5px;
+              vertical-align: top;
+            }
+          }
+
+          &:not(:first-child) {
+            h2.gsection_title {
+              margin-top: 3rem!important;
+            }
+          }
+        }
+
+        .gfield_checkbox li label,
+        .gfield_radio li label {
+          font-size: 1rem;
+          font-weight: 400;
+        }
+
+        select {
+            border: 1px solid $light-grey6;
+            margin-bottom: 0;
+            padding: 9px 5px;
+        }
+      }
+
+      .gform_page_footer {
+        border-top: none;
+
+        input[type=button],
+        input[type=submit] {
+          background-color: $green;
+          border-radius: 3px;
+          color: $white;
+          display: inline-block;
+          font-size: 1rem;
+          font-weight: 400;
+          text-decoration: none;
+          padding: 0.5rem 2rem;
+          border: none;
+          margin: 0 1rem 1rem 0;
+          min-width: 100px;
+          outline: none;
+          @include transform-item;
+
+          &:hover,
+          &:focus,
+          :active {
+            background-color: $greenHover;
+          }
+
+          body.about-us & {
+            background-color: $pink;
+
+            &:hover,
+            &:focus,
+            :active {
+              background-color: $pinkHover;
+            }
+          }
+          
+          body.get-involved &,
+          body.event & {
+            background-color: $orange;
+
+            &:hover,
+            &:focus,
+            :active {
+              background-color: $orangeHover;
+            }
+          }
+
+          body.news &,
+          body.blog & {
+            background-color: $blue;
+
+            &:hover,
+            &:focus,
+            :active {
+              background-color: $blueHover;
+            }
+          }
+
+          &.gform_previous_button {
+            background-color: $light-grey1!important;
+            color: $dark-grey!important;
+
+            &:hover,
+            &:focus,
+            &:active {
+              background-color: $light-grey3!important;
+            }
+          }
+        }
+      }
+    }
+
+    .gform_footer {
+
+      margin: 0;
+
+    }
+
+    li.gfield {
+      &.gfield_error {
+        background-color: $greenLightBg;
+        border-top: 2px solid $green;
+        border-bottom: 2px solid $green;
+        padding: 1rem 0;
+
+        input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+          border: 1px solid $green;
+        }
+
+        body.about-us & {
+          background-color: $pinkLightBg;
+          border-top: 2px solid $pink;
+          border-bottom: 2px solid $pink;
+
+          input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+            border: 1px solid $pink;
+          }
+        }
+
+        body.get-involved &,
+        body.event & {
+          background-color: $orangeLightBg;
+          border-top: 2px solid $orange;
+          border-bottom: 2px solid $orange;
+
+          input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+            border: 1px solid $orange;
+          }
+        }
+
+        body.news &,
+        body.blog & {
+          background-color: $blueLightBg;
+          border-top: 2px solid $blue;
+          border-bottom: 2px solid $blue;
+
+          input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) {
+            border: 1px solid $blue;
+          }
+        }
+      }
+
+      &.hidden_label {
+        input{
+          margin-top: 0!important;
+        }
+      }
+    }
+
+    div.validation_error {
+      color: $green;
+      border-top: 2px solid $green;
+      border-bottom: 2px solid $green;
+      margin-top: 2rem;
+      width: 98%!important;
+
+      body.get-involved &,
+      body.event & {
+        color: $orange;
+        border-top: 2px solid $orange;
+        border-bottom: 2px solid $orange;
+      }
+
+      body.about-us & {
+        color: $pink;
+        border-top: 2px solid $pink;
+        border-bottom: 2px solid $pink;
+      }
+
+      body.news &,
+      body.blog & {
+        color: $blue;
+        border-top: 2px solid $blue;
+        border-bottom: 2px solid $blue;
+      }
+    }
+
+    .validation_message {
+      color: $green;
+
+      body.about-us & {
+        color: $pink;
+      }
+
+      body.get-involved &,
+      body.event & {
+        color: $orange;
+      }
+
+      body.news &,
+      body.blog & {
+        color: $blue;
+      }
+    }
+
+    li.gfield_error {
+
+      .gfield_label,
+      div.ginput_complex.ginput_container label,
+      ul.gfield_checkbox,
+      ul.gfield_radio {
+        color: $green;
+
+        body.about-us & {
+          color: $pink;
+        }
+
+        body.get-involved &,
+        body.event &  {
+          color: $orange;
+        }
+
+        body.news &,
+        body.blog & {
+          color: $blue;
+        }
+      }
+    }
+
+
+    .gfield_checkbox {
+      li {
+        input,
+        input[type=checkbox] {
+          margin-top: 5px!important;
+          vertical-align: top!important;
+        }
+      }
+    }
+
+    input[type=checkbox] {
+      width: 20px;
+      height: 15px;
+      margin: -1px 0 0;
+      vertical-align: middle;
+    }
+  }
+
+  .gf_progressbar_wrapper {
+    margin-bottom: 1rem;
+
+    h3.gf_progressbar_title {
+      color: $dark-grey;
+      font-size: 1rem!important;
+      font-family: "Muli", Helvetica, Arial, sans-serif;
+      font-weight: 600;
+      left:-12px;
+      margin: 1rem 0!important;
+      padding-top: 1rem;
+      position: relative;
+    }
+
+    .gf_progressbar {
+      background: none;
+      background-color: $light-grey2;
+      border-radius: 0;
+
+      .gf_progressbar_percentage {
+        background: none;
+        background-color: $green;
+        border-radius: 0;
+        font-size: .9rem!important;
+
+        span {
+          color: $white;
+          font-weight: 700;
+          text-shadow: none;
+        }
+
+        body.about-us & {
+          background-color: $pink;
+        }
+        
+        body.services & {
+          background-color: $green;
+        }
+
+        body.news &,
+        body.blog & {
+          background-color: $blue;
+        }
+
+        body.get-involved &,
+        body.events {
+          background-color: $orange;
+        }
+      }
+
+      &:after {
+        display: none;
+      }
+    }
+  }
+
+  .gform_confirmation_message {
+    margin-top: 1rem;
+  }
+}
+
+.enquiry-form {
+  display: none;
+  overflow: visible;
+  position: relative;
+
+  &.open {
+    display: block;
+  }
+
+  #contact_form_pop {
+    border: 3px solid $light-grey3;
+    position: absolute;
+    right: 0;
+    top: -1px;
+    background: $lighter-grey;
+    z-index: 999;
+    padding: 2rem;
+    width: 100%;
+    
+    @media (min-width: 768px) {
+      width: 600px;
+    }
+  }
+
+  span.close {
+    color: #000;
+    opacity: .9!important;
+    position: absolute;
+    z-index: 999;
+    right: 4px;
+    top: 13px;
+    padding: 0 10px;
+    cursor: pointer;
+
+    img {
+      height: 15px;
+      width: 15px;
+    }
+
+    &:hover {
+      opacity: .6!important;
+    }
+  }
+
+  .field-group {
+    margin-bottom: 1rem;
+
+    input[type=checkbox] {
+      width: 20px;
+      height: 15px;
+      margin: -1px 0 0;
+      vertical-align: middle;
+    }
+  }
+
+  .field-group label {
+
+    &.ftr-label {
+      font-size: .9rem;
+    }
+
+    a {
+      font-size: inherit;
+      font-weight: inherit;
+      text-decoration: underline;
+
+      &:hover {
+        color: $green;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .field-group.invalid, 
+  .field-group.invalid a {
+    color: rgb(217, 0, 0);
+  }
+
+  .field-group.invalid input {
+    outline: 1px solid rgb(217, 0, 0);
+  }
+
+}
+
+body img.gform_ajax_spinner,
+body #bbox-msg-wrapper img {
+ width: auto!important;
+}
+
+
+// Blackbaud stepped Donation form...
+
+
+.timeline {
+  display: flex;
+  
+  body.page-id-2502 & {
+    display: none;
+
+    &.loaded {
+      display: flex;
+    }
+  }
+}
+
+#mongo-form {
+
+  .step {
+    // Stage 1:
+    //.BBDFormSectionGiftInfo,
+    //.BBDFormSectionComments,
+    &.step-1,
+    // Stage 2:
+    //#bboxdonation_billing_divBillingSection,
+    &.step-2,
+    // Stage 3:
+    //.BBDFormSectionPaymentInfo,
+    //#reCAPTCHASection,
+    //.BBFormSection.BBFormButtonRow,
+    &.step-3  {
+      display: none;
+
+      &.current {
+        display: block;
+      }
+    }
+  }
+
+  #bboxdonation_divThanks {
+    div {
+      p {
+        &:first-child {
+          font-size: 1.2rem;
+          margin: 0 0 2rem;
+          padding: 0 0 .25rem;
+          border-bottom: 1px solid $light-grey1;
+        }
+      }
+    }
+  }
+
+  em {
+    font-style: normal!important;
+  }
+
+  img {
+    margin-bottom: 0;
+  }
+
+  input#bboxdonation_gift_txtOtherAmountButtons {
+    min-width: 100px;
+  }
+
+  .step-btn {
+    margin: 1rem 1rem 1rem 0;
+    min-width: 210px;
+
+    &.prev {
+      background-color: $light-grey1;
+      color: $dark-grey;
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $light-grey3;
+      }
+    }
+  }
+
+  fieldset {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .BBFormContainer {
+    border-radius: 0; 
+    padding: 10px 0;
+  }
+
+  #bboxdonation_divForm {
+    overflow: visible;
+
+    .BBFormProgressContainer {
+      border-top: 1px solid $light-grey1;
+      margin: 3rem 0 2rem;
+      padding-top: 3rem;
+
+      .BBFormProgressBar-Summary {
+        background-color: $light-grey2;
+        border-radius: 0;
+        box-shadow: none;
+        height: 24px;
+
+        .BBFormProgress-Bar {
+          background-color: $green;
+        }
+      }
+    }
+  }
+
+  .BBFormSection {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .BBFormFieldContainer {
+    margin: 0 0 1rem;
+    padding: 0;
+
+    #bboxdonation_gift_lblUKGiftAidTerms {
+      font-weight: 400;
+      font-style: normal;
+      line-height: 1rem; 
+    }
+
+    &#bboxdonation_comment_fldComments {
+
+      label {
+        display: block;
+        margin-bottom: .25rem;
+        max-width: 100%;
+      }
+    }
+
+    &#reCAPTCHADisclosure {
+      margin-left: 0;
+    }
+
+    #bbox_reCAPTCHA {
+      .grecaptcha-badge {
+        z-index: 1;
+      }
+    }
+  }
+
+  .BBFormSectionHeading {
+    margin: 0 0 2rem;
+    padding: 0 0 .25rem;
+
+    &#bboxdonation_recurrence_divHeadingRecurrence {
+      margin: 1rem 0;
+    }
+
+    label {
+      font-size: 1.2rem;        
+    }
+
+  }
+
+  .BBFormRadioLabelGivingLevel {
+    background-color: $lighter-grey;
+    border-radius: 3px;
+    border: none;
+    color: $black-text;
+    font-size: 1.5rem;
+
+    &.BBFormRadioLabelGivingLevelSelected {
+      background-color: $orange;
+      color: $white;
+
+      &.BBFormRadioLabelGivingLevelOther {
+
+        @media (max-width: 599px) {
+          padding: 12px 10px;
+        }
+      }
+
+      /*&:hover,
+      &:focus,
+      &:active {
+        background-color: $orangeHover;
+      } */
+    }
+  }
+
+  .BBFormSubmitbutton {
+    background-color: $orange;
+    border-radius: 3px;
+    box-shadow: none;
+    color: $white;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1rem 0;
+    min-width: 210px;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase; 
+
+    @media (min-width: 768px) {
+      margin: 0 0 1rem;
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $orangeHover;
+      opacity: 1;
+    }
+  }
+
+  .BBFormRadioGiftNotSelected,
+  .BBFormRadioPaymentNotSelected {
+    background-color: $lighter-grey;
+    border-radius: 3px;
+    border: none;
+    color: $black-text;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    width: 240px;
+  }
+
+  .BBFormGiftOtherAmount {
+    border: none!important;
+    margin: -4px 0 -10px 0;
+  }
+
+  .BBFormRadioGiftSelected {
+    background-color: $orange;
+    border-radius: 3px;
+    border: none;
+    color: $white;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    width: 240px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $orangeHover;
+    }
+  }
+
+  .BBFormRadioPaymentSelected {
+    background-color: $light-grey1;
+    border-radius: 3px;
+    border: none;
+    color: $dark-grey;
+    font-weight: 400;
+    padding: 0.5rem 2rem;
+    width: 240px;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background-color: $light-grey3;
+    }
+  }
+
+  .BBFormSelectList {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url(assets/images/select-arrow.svg);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 20px;
+    border: 1px solid $light-grey6;
+    border-radius: 0;
+    line-height: 1.5rem!important;
+    min-height: 2.5rem;
+    padding: .5rem 1rem .5rem .5rem;
+
+    @media (min-width: 600px) {
+      background-size: 18px;
+    }
+
+    &#bboxdonation_billing_billingAddress_ddUKCounty {
+      margin-top: 10px;
+      max-width: 100%;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        margin-left: 160px;
+      }
+      @media (min-width: 600px) {
+        max-width: 350px;
+      }
+    }
+  }
+
+  .BBFormTextbox {
+    border: 1px solid $light-grey6;
+    border-radius: 0;
+    line-height: inherit!important;
+    min-height: 2.5rem;
+    padding: .5rem;
+
+    &.BBFormGiftOtherAmount {
+      background: none!important;
+      box-shadow: none!important;
+      color: $white!important;
+      font-size: 1.5rem;
+      padding: 0;
+
+      &::placeholder {
+        color: $white!important;
+      }
+    }
+
+    &#bboxdonation_billing_txtFirstName {
+      max-width: 252px;
+
+      @media (max-width: 767.98px) {
+        max-width: 300px;
+      }
+      @media (max-width: 599.98px) {
+        max-width: 100%;
+      }
+      @media (min-width: 600px) {
+        width: 52%;
+      }
+    }
+
+    &#bboxdonation_billing_txtLastName {
+      display: block;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        margin-left: 160px;
+      }
+      @media (min-width: 600px) {
+        margin-top: 10px;
+        max-width: 350px;
+      }
+    }
+
+    &#bboxdonation_billing_billingAddress_txtUKCity {
+      max-width: 100%;
+      width: 100%;
+
+      @media (min-width: 768px) {
+        //margin-left: 160px;
+      }
+      @media (min-width: 600px) {
+        max-width: 350px;
+      }
+    }
+  }
+
+  .BBFormTextArea {
+    border: 1px solid $light-grey6;
+    border-radius: 0;
+    min-height: 120px;
+    padding: .5rem;
+    resize: vertical;
+  }
+
+  .BBFormFieldLabel {
+    font-weight: 400;
+    line-height: 1.4rem;
+    margin-left: 0!important;
+    margin-right: 0!important;
+    //max-width: 130px;
+    padding-top: .5rem;
+    text-align: left;
+
+    &#bboxdonation_payment_lblSecCode {
+      text-align: right;
+    }
+
+    &#bboxdonation_billing_lblOptInIntro {
+      max-width: 100%;
+    }
+
+    &.BBFormSummaryTotal {
+      display: none;
+    }
+
+    &#bboxdonation_billing_lblFullName,
+    &#bboxdonation_billing_billingAddress_lblUKCityCounty {
+      @media (max-width: 767.98px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .BBDFormSectionComments {
+    label,
+    textarea {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+
+  .BBFormGrid {
+    padding-left: 0;
+
+    li {
+      list-style: none;
+      margin-left: -3px!important;
+
+      input[type=checkbox] {
+        margin-top: 10px!important;
+        width: 20px!important;
+      }
+
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  input[type=checkbox] {
+    width: 20px;
+  }
+
+  input[type=checkbox]:checked + label {
+    font-weight: 700;
+  }
+
+  .BBFormCheckboxLabel {
+    font-weight: 400;
+  }
+
+  .BBFormErrorBlock {
+    border: none;
+    border-radius: 0;
+    border-top: 2px solid $orange;
+    border-bottom: 2px solid $orange;
+    background-color: $orangeLightBg;
+    color: $orange;
+    max-width: 100%;
+
+    ul {
+      margin-bottom: .5rem;
+    }
+  }
+}

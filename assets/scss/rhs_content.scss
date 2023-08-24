@@ -1,0 +1,113 @@
+.rhs
+{
+  margin-bottom: 2rem;
+  overflow: visible;
+
+  a
+  {
+    text-decoration: none;
+    font-size: .8rem;
+    font-weight: 400;
+    cursor: pointer;
+    cursor: hand;
+  }
+
+  .rhs-title
+  {
+    color: $white;
+    background-color: $black-text;
+    font-family: 'Muli', Helvetica, Arial, sans-serif;
+    font-size: .85rem;
+    font-weight: 800;
+    padding: 0.75rem;
+    background-position: 95%;
+    background-repeat: no-repeat;
+    background-size: 1.5rem;
+    margin: 0;
+    text-decoration: none;
+
+    &.none              { background-image: none; }
+    &.speech-bubbles    { background-image: url('assets/icons/rhs_speech_bubbles.svg'); }
+    &.download          { background-image: url('assets/icons/rhs_download.svg'); }
+    &.hands             { background-image: url('assets/icons/rhs_hands.svg'); }
+    &.links             { background-image: url('assets/icons/rhs_links.svg'); }
+    &.people            { background-image: url('assets/icons/rhs_people.svg'); }
+    &.wellbeing         { 
+      background-image: url('assets/icons/rhs_wellbeing.svg');
+      background-size: 1.2rem;
+    }
+    &.tick              { background-image: url('assets/icons/rhs_tick.svg'); }
+
+    &.black             { background-color: $black-text; }
+    &.blue              { background-color: $blue; }
+    &.pink              { background-color: $pink; }
+    &.green             { background-color: $green; }
+    &.orange            { background-color: $orange; }
+
+  }
+
+  .rhs-link
+  {
+    border-bottom: 1px solid $mid-grey;
+
+    a
+    {
+      display: block;
+      font-weight: 400;
+      font-family: "Muli", Helvetica, Arial, sans-serif;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+
+      &:hover,
+      &:focus
+      {
+        text-decoration: underline;
+      }
+    }
+
+    &.active
+    {
+      a
+      {
+        font-family: Helvetica, Arial, sans-serif;
+        font-weight: 700;
+      }
+    }
+  }
+
+  .rhs-image
+  {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+
+    img
+    {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      width: 100%;
+      height: auto;
+    }
+
+    &.no-title
+    {
+      width: auto;
+      padding: 0px;
+
+      img
+      {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: auto;
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+}

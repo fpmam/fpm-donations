@@ -1,0 +1,235 @@
+/* Title */
+.title
+{
+  border-bottom: 1px solid $footer-strip-background;
+  margin-bottom: .75rem;
+
+  body.page-id-2473 & {
+    border-bottom: none;
+  }
+
+  &.btm-margin {
+    margin-bottom: 1.5rem;
+  }
+
+  .title-inner
+  {
+    margin: 0 0 .5rem;
+
+    .title-container
+    {
+      .title-text
+      {
+       
+        &:not(.centred) {
+          @media (min-width: 768px) {
+            padding-right: 5%;
+          }
+        }
+
+        color: $black-text;
+
+        &.left
+        {
+          text-align: left;
+        }
+
+        &.centred
+        {
+          text-align: center;
+        }
+
+        &.black
+        {
+          color: $black-text;
+        }
+
+        &.green
+        {
+          color: $green;
+        }
+
+        &.dark-green
+        {
+          color: $dark-green;
+        }
+
+        &.pink
+        {
+          color: $pink;
+        }
+
+        &.blue
+        {
+          color: $blue;
+        }
+
+        &.orange
+        {
+          color: $orange;
+        }
+      }
+    }
+  }
+}
+
+.post-field
+{
+  margin-top: -1.5rem;
+  margin-bottom: 2rem;
+
+  .post-field-inner
+  {
+    .post-field-container
+    {
+      margin-bottom: 1rem;
+
+      .row
+      {
+        align-items: center;
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        margin: 0;
+
+        .profile-image-container
+        {
+          width: 56px;
+        }
+
+        .column
+        {
+          display: inline-block;
+          float: left;
+          font-size: .75rem;
+          vertical-align: baseline;
+          color: $grey-text;
+          height: 1.1rem;
+
+          .column-inner
+          {
+            border-right: 1px solid $grey-section-background;
+            padding-right: 0.5rem;
+            margin-right: 0.5rem;
+            line-height: 120%;
+          }
+
+          &:last-child
+          {
+            .column-inner
+            {
+              border-right: none;
+            }
+          }
+
+          &.profile-image
+          {
+            height: auto;
+            overflow: visible;
+            border-right: none;
+
+            img
+            {
+              width: 40px;
+              height: auto;
+              border-radius: 50%;
+            }
+          }
+
+          &.author
+          {
+            color: $grey-text;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 700;
+          }
+
+          &.from
+          {
+            color: $grey-text;
+            font-family: Helvetica, Arial, sans-serif;
+            font-weight: 700;
+          }
+
+          &.priority
+          {
+            color: $grey-text;
+          }
+
+          &.date
+          {
+            color: $grey-text;
+          }
+
+          &.location
+          {
+            color: $mid-grey;
+          }
+
+          &.email
+          {
+            color: $mid-grey;
+
+            a
+            {
+              color: $mid-grey;
+              font-weight: 300;
+              text-decoration: none;
+
+              &:hover
+              {
+                text-decoration: underline;
+              }
+            }
+          }
+
+          &.phone
+          {
+            color: $mid-grey;
+
+            a
+            {
+              color: $mid-grey;
+              font-weight: 300;
+              text-decoration: none;
+
+              &:hover
+              {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.rh-col {
+  position: relative;
+
+  a {
+    display: block;
+    margin-bottom: 10px;
+
+
+    @media (min-width: 768px) {
+      bottom: 0;
+      position: absolute;
+    }
+  }
+}
+
+.our-library .post-field,
+.press-releases .post-field-container .row .profile-image-container,
+.team-events .post-field-container .row .profile-image-container,
+.team-events .post-field-container .row .column.author,
+.diversity-events .post-field-container .row .profile-image-container,
+.diversity-events .post-field-container .row .column.author,
+.job-openings .post-field-container .row .profile-image-container,
+.notifications .post-field-container .row .profile-image-container,
+.our-recruitment .post-field-container .row .profile-image-container,
+.our-news.news-articles .post-field-container .row .profile-image-container {
+  display: none !important;
+}

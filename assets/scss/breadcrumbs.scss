@@ -1,0 +1,98 @@
+/* Breadcrumbs */
+.breadcrumb-homepage
+{
+  border-bottom: 10px solid $footer-strip-background;
+  margin-bottom: 2rem;
+}
+
+.breadcrumbs
+{
+  background-color: $grey-section-background;
+  margin-bottom: 3rem;
+
+  .breadcrumbs-inner
+  {
+    .breadcrumbs-container
+    {
+      ul
+      {
+        list-style: none;
+        display: flex;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        align-items: center;
+        margin: 0;
+        padding: .5rem 0;
+
+        li
+        {
+          color: $black-text;
+          display: inline-block;
+          float: left;
+          list-style: none;
+          a {
+            font-weight: 600;
+          }
+
+        }
+
+        li.breadcrumbs-separator
+        {
+          font-size: .9rem;
+          font-weight: 600;
+          margin: 0 .5rem;
+        }
+
+        li.breadcrumbs-page
+        {
+          a
+          {
+            color: $black-text;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:hover,
+            &:focus
+            {
+              text-decoration: underline;
+            }
+          }
+        }
+
+        li.breadcrumbs-current-page
+        {
+          a
+          {
+            color: $black-text;
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-decoration: none;
+
+            &:hover,
+            &:focus
+            {
+              text-decoration: underline;
+            }
+          }
+        }
+      }
+    }
+
+    hr
+    {
+      margin-top: 5px;
+    }
+  }
+  &.under-carousel {
+    margin: -1rem 0 3rem;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .breadcrumbs {
+    display: none;
+  }
+}
